@@ -1,0 +1,32 @@
+{
+  "total_bytes": 6820520,
+  "limit_bytes": 16777216,
+  "assets": [
+    {
+      "path": "code/artifacts/v73/checkpoint/tree_log.npz",
+      "bytes": 175780,
+      "sha256": "2c66069b02dc847195a4d2fa081f457ba412ec5cc414e1f6b286af7e32b0e4e4"
+    },
+    {
+      "path": "code/artifacts/v73/checkpoint/rich.npz",
+      "bytes": 1845262,
+      "sha256": "a400277a264f0ee59b3d1a72c4c37f5b94086c29026ce4571f3b21a69196eb0e"
+    },
+    {
+      "path": "code/artifacts/v73/checkpoint/compact_balanced.npz",
+      "bytes": 4044398,
+      "sha256": "19cc3ced0c5cb53adb4bb67103f102e23f5e924c0f16a06d511e907ba06504ea"
+    },
+    {
+      "path": "code/artifacts/v73/checkpoint/stack.npz",
+      "bytes": 754576,
+      "sha256": "c6b57e5a9a8a0a1c1b03afbbd988871257cf76da30186acabcd4de52e3e57216"
+    },
+    {
+      "path": "code/artifacts/v73/checkpoint/config.json",
+      "bytes": 504,
+      "sha256": "556be11de903d014d7e8c5a66f9ecdbb4ecce9992b219cd685043ced38566f53"
+    }
+  ],
+  "training_audit_caches_are_not_inference_assets": true
+}

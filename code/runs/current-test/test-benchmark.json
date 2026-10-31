@@ -1,0 +1,47 @@
+{
+  "at_utc": "2026-10-31T10:51:11.571137+00:00",
+  "official_score": {
+    "protocol": "dase7506-mp2-open-hard-verifier-v5",
+    "split": "test",
+    "correct": 402,
+    "n": 467,
+    "accuracy": 86.0813704496788,
+    "scoring_seconds": 0.016355874999135267
+  },
+  "prediction_wall_seconds": 3.6785662090042024,
+  "scoring_wall_seconds": 0.10623499999928754,
+  "total_wall_seconds": 3.78480120900349,
+  "cpu": "arm",
+  "python": "3.11.7 (main, Dec 15 2023, 12:09:56) [Clang 14.0.6 ]",
+  "numpy": "1.26.4",
+  "threads": 4,
+  "device": "cpu",
+  "reference_xeon_verified": false,
+  "freeze_sha256": "74bf6bd0bdb0f0ea45f64ea967894f491430c1e9daf9dc8717a016e2dc323b8a",
+  "all467_choices_equal": true,
+  "asset_bytes": 6820520,
+  "commands": [
+    [
+      "/opt/anaconda3/bin/python",
+      "predict.py",
+      "--method",
+      "submission_v73.py",
+      "--checkpoint",
+      "artifacts/v73/checkpoint",
+      "--split",
+      "test",
+      "--output",
+      "runs/current-test/test-predictions.json"
+    ],
+    [
+      "/opt/anaconda3/bin/python",
+      "score_predictions.py",
+      "--split",
+      "test",
+      "--predictions",
+      "runs/current-test/test-predictions.json",
+      "--output",
+      "runs/current-test/test-score.json"
+    ]
+  ]
+}

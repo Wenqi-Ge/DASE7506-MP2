@@ -1,0 +1,72 @@
+{
+  "at_local_utc": "2026-10-30T15:20:03.607100+00:00",
+  "method": "submission_v73.py",
+  "checkpoint": "artifacts/v73/checkpoint",
+  "independently_authored_implementation": true,
+  "method_claim": "Multi-view ranking-tree and candidate-attention ensemble.",
+  "validation_correct": 758,
+  "validation_n": 798,
+  "selected": {
+    "weights": {
+      "tree_log": 0.5,
+      "compact_balanced": 0.3333333333333333,
+      "rich": 0.16666666666666666
+    },
+    "pooling": 1.0,
+    "correct": 758,
+    "trap_correct": 41,
+    "candidate_brier": 0.09449548402206584
+  },
+  "official_test": {
+    "protocol": "dase7506-mp2-open-hard-verifier-v5",
+    "split": "test",
+    "correct": 402,
+    "n": 467,
+    "accuracy": 86.0813704496788,
+    "scoring_seconds": 0.030190462013706565
+  },
+  "target85_achieved": true,
+  "test_host_comparison": {
+    "passed": true,
+    "questions": 467,
+    "all_ids_and_choices_equal": true
+  },
+  "inference_asset_bytes": 6820520,
+  "inference_asset_mib": 6.504554748535156,
+  "new_ser_test_total_seconds": 8.811145505052991,
+  "local_test_total_seconds": 3.439585588996124,
+  "reference_xeon_verified": false,
+  "training_seconds": 212.7382338919997,
+  "training_gpu": "NVIDIA GeForce RTX 4090 D",
+  "training_peak_gpu_bytes": 406987776,
+  "unit_tests_passed": 9,
+  "training_audit": "training-audit.json",
+  "runtime_audits": [
+    "local-runtime-audit.json",
+    "new-ser-runtime-audit.json"
+  ],
+  "selection_record": "selection-before-test.json",
+  "pretest_receipt": "new-ser-pretest-receipt.json",
+  "test_policy": "Only validation-selected v73 tested in this stage, then reproduced unchanged on the second host. No TEST item-level correctness analysis or post-test variant selection.",
+  "limitations": [
+    "Benchmark reproduction is not an independent blind evaluation.",
+    "Validation is adaptive development.",
+    "The fixed-base OOF meta holdout is not full nested pipeline CV."
+  ],
+  "measurement_note": "Local validation smoke timing overlapped a short unit-test process; use the isolated fresh-process TEST benchmarks for resource claims.",
+  "clean_release": {
+    "passed": true,
+    "at_local_utc": "2026-10-30T15:26:05.869690+00:00",
+    "inference_assets_unchanged": true,
+    "clean_new_ser_test_correct": 402,
+    "clean_new_ser_test_n": 467,
+    "clean_new_ser_total_seconds": 8.893130018026568,
+    "clean_new_ser_all467_choices_equal_to_prior_run": true,
+    "clean_local_validation_all798_choices_equal": true,
+    "numpy_only_inference": true,
+    "clean_package_unit_tests_passed": 9,
+    "official_data_check_passed": true,
+    "method_parameters_changed": false
+  },
+  "run_freeze_sha256": "58f62464c1db152e123f555ffd14d5d096742431545ea36ce1844aeb6210a9e9"
+}

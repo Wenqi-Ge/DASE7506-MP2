@@ -1,0 +1,26 @@
+{
+  "at_utc": "2026-10-30T15:23:49.882859+00:00",
+  "official_score": {
+    "protocol": "dase7506-mp2-open-hard-verifier-v5",
+    "split": "validation",
+    "correct": 758,
+    "n": 798,
+    "accuracy": 94.9874686716792,
+    "scoring_seconds": 0.025120070000411943
+  },
+  "prediction_wall_seconds": 5.399552294999012,
+  "scoring_wall_seconds": 0.09031604400661308,
+  "total_wall_seconds": 5.489868339005625,
+  "cpu": "Intel(R) Core(TM) i9-14900KF",
+  "threads": 4,
+  "device": "cpu",
+  "asset_bytes": 6820520,
+  "reference_xeon_verified": false,
+  "numpy": "2.5.3",
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "numeric_backend": {
+    "OPENBLAS_CORETYPE": "Haswell",
+    "NPY_DISABLE_CPU_FEATURES": "X86_V4,AVX512_ICL,AVX512_SPR"
+  },
+  "run_freeze_sha256": "58f62464c1db152e123f555ffd14d5d096742431545ea36ce1844aeb6210a9e9"
+}

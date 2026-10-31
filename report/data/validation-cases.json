@@ -1,0 +1,398 @@
+[
+  {
+    "category": "full_correct_majority_wrong",
+    "split": "validation",
+    "id": "gsm8k:9b1b76a7e6f376d34000ecd72c533f44810f9f0116378ffeca9e13af53bda296",
+    "question": "The show Magic King was on the air for 10 seasons and 20 episodes per season for the first half of seasons and 25 for the second half of the show.  How many total episodes were there?",
+    "gold_answer": "225",
+    "full_candidate": 0,
+    "majority_candidate": 1,
+    "answer_score_gap": 0.007349141802800441,
+    "candidates": [
+      {
+        "index": 0,
+        "answer": "225",
+        "text": "We know:\n\n- The show had **10 seasons**.\n- The first half of the seasons had **20 episodes per season**, and the second half had **25 episodes per season**.\n\nSo, total episodes = (20 \u00d7 5) + (25 \u00d7 5) = **100 + 125 = 225**.\n\n#### <numeric answer> 225",
+        "correct": true,
+        "probability": 0.6722866838340147,
+        "answer_mean_probability": 0.6722866838340147
+      },
+      {
+        "index": 1,
+        "answer": "450",
+        "text": "The show had 10 seasons.  \n- First half: 20 episodes per season \u2192 $ 10 \\times 20 = 200 $ episodes.  \n- Second half: 25 episodes per season \u2192 $ 10 \\times 25 = 250 $ episodes.  \n\nTotal episodes = $ 200 + 250 = \\boxed{450} $.",
+        "correct": false,
+        "probability": 0.7581688511531188,
+        "answer_mean_probability": 0.6649375420312142
+      },
+      {
+        "index": 2,
+        "answer": "450",
+        "text": "We are given:\n\n- The show was on the air for **10 seasons**.\n- **20 episodes per season** for the **first half** of the seasons.\n- **25 episodes per season** for the **second half**.\n\n### Step 1: Calculate episodes in the first half\n- 10 seasons \u00d7 20 episodes/season = **200 episodes**\n\n### Step 2: Calculate episodes in the second half\n- 10 seasons \u00d7 25 episodes/season = **250 episodes**\n\n### Step 3: Add both halves\n- 200 + 250 = **450 episodes**\n\n### Final Answer:\n#### <numeric answer> 450",
+        "correct": false,
+        "probability": 0.549238351725225,
+        "answer_mean_probability": 0.6649375420312142
+      },
+      {
+        "index": 3,
+        "answer": "450",
+        "text": "The show had **10 seasons**, with **20 episodes per season** for the first half and **25 episodes per season** for the second half.\n\n- First half: $10 \\text{ seasons} \\times 20 \\text{ episodes} = 200$ episodes  \n- Second half: $10 \\text{ seasons} \\times 25 \\text{ episodes} = 250$ episodes  \n\n**Total episodes:** $200 + 250 = \\boxed{450}$",
+        "correct": false,
+        "probability": 0.687405423215299,
+        "answer_mean_probability": 0.6649375420312142
+      }
+    ]
+  },
+  {
+    "category": "full_correct_majority_wrong",
+    "split": "validation",
+    "id": "gsm8k:b8ac3654f898875f8eb98d0e50e94d3f2326d629b051e9a34e61c9c2bb697cdc",
+    "question": "A passenger train transports passengers between two stations located in two separate cities. On a particular day, the train carried 100 passengers from one station to the other one way, and on the return trip carried 60 passengers. If the train made three more round trips that day, taking the same number of people as the first trip in each trip, calculate the total number of passengers transported between both stations?",
+    "gold_answer": "640",
+    "full_candidate": 1,
+    "majority_candidate": 0,
+    "answer_score_gap": 0.01406006703616891,
+    "candidates": [
+      {
+        "index": 0,
+        "answer": "480",
+        "text": "We are given:\n\n- On one trip, 100 passengers are carried from one station to the other.\n- On the return trip, 60 passengers are carried.\n- The train makes **three more round trips**, each taking the same number of people as the first trip.\n\n### Step 1: Determine the number of passengers per round trip\n- First trip: 100 passengers\n- Return trip: 60 passengers\n\nSo, **one round trip** transports **100 + 60 = 160 passengers**.\n\n### Step 2: Calculate total passengers transported over three round trips\n- Each round trip: 160 passengers\n- Three round trips: $ 3 \\times 160 = 480 $ passengers\n\n### Final Answer:\n$$\n\\boxed{480}\n$$",
+        "correct": false,
+        "probability": 0.6318324839421717,
+        "answer_mean_probability": 0.5114634196749658
+      },
+      {
+        "index": 1,
+        "answer": "640",
+        "text": "We are given:\n\n- On a **single round trip**, the train transported **100 passengers** from one station to the other **one way**.\n- On the **return trip**, it transported **60 passengers**.\n- The train made **3 more round trips**.\n\nLet\u2019s calculate the total number of passengers transported:\n\n### Step 1: Single round trip\n- 100 passengers from one direction + 60 passengers back = **160 passengers per round trip**\n\n### Step 2: 3 more round trips\n- $ 160 \\times 3 = 480 $ passengers\n\n### Step 3: Total passengers transported\n- $ 160 + 480 = 640 $\n\n### \u2705 Final Answer:\n$$\n\\boxed{640}\n$$",
+        "correct": true,
+        "probability": 0.5255234867111347,
+        "answer_mean_probability": 0.5255234867111347
+      },
+      {
+        "index": 2,
+        "answer": "480",
+        "text": "We are told:\n\n- On **one trip**:\n  - 100 passengers **left** one way from one station to the other.\n  - 60 passengers **left** the other way.\n\n- The train made **three more round trips** (i.e., 3 more trips) of the same size as the first trip.\n\nLet\u2019s break it down:\n\n### Step 1: Determine the number of passengers per trip\n\n- On one trip, 100 passengers **left** one way, and 60 **left** the other way.\n- So, the total number of passengers transported in one trip is:\n\n$$\n100 + 60 = 160 \\text{ passengers}\n$$\n\n### Step 2: Calculate total passengers transported over 3 trips\n\n- Each trip transports 160 passengers.\n- There are 3 trips.\n\n$$\n\\text{Total passengers} = 3 \\times 160 = 480\n$$\n\n### Final Answer:\n\n$$\n\\boxed{480}\n$$",
+        "correct": false,
+        "probability": 0.44396212212285535,
+        "answer_mean_probability": 0.5114634196749658
+      },
+      {
+        "index": 3,
+        "answer": "480",
+        "text": "We are told:\n\n- On a **single round trip**:\n  - The train transported **100 passengers** from one station to the other.\n  - Then **60 passengers** on the return trip.\n\n- The train made **3 more round trips**.\n\nLet\u2019s break it down:\n\n- Each round trip has **100 + 60 = 160 passengers**.\n- Each round trip takes **3 more trips**.\n\nSo:\n\n- Total passengers transported in 3 round trips = $ 160 \\times 3 = 480 $ passengers.\n\n### Final Answer:\n\n$$\n\\boxed{480}\n$$",
+        "correct": false,
+        "probability": 0.45859565295987004,
+        "answer_mean_probability": 0.5114634196749658
+      }
+    ]
+  },
+  {
+    "category": "full_correct_majority_wrong",
+    "split": "validation",
+    "id": "gsm8k:d41771a33607bdaf7b3e00726d01e899fdd0d6e8b013369a93bcc90248c0c46b",
+    "question": "Tom buys 20 shares of a stock that costs $3 each.  He sells 10 of those shares for $4 each.  The rest of the shares end up doubling in value.  How much profit does he make?",
+    "gold_answer": "40",
+    "full_candidate": 2,
+    "majority_candidate": 0,
+    "answer_score_gap": 0.019925250152251994,
+    "candidates": [
+      {
+        "index": 0,
+        "answer": "100",
+        "text": "We are given:\n\n- Tom buys **20 shares** of a stock that costs **$3 each**.\n- He sells **10 shares** for **$4 each**.\n- The remaining **10 shares** double in value.\n\n---\n\n### Step 1: Calculate the profit from selling the 10 shares\n\n- Each share sells for **$4**, so:\n  $$\n  10 \\times 4 = 40 \\text{ dollars}\n  $$\n\n---\n\n### Step 2: Calculate the profit from the remaining 10 shares\n\n- Each share doubles in value, so the total value is:\n  $$\n  10 \\times 3 \\times 2 = 60 \\text{ dollars}\n  $$\n\n---\n\n### Step 3: Total profit\n\n- Profit from the 10 shares: **$40**\n- Profit from the remaining 10 shares: **$60**\n- Total profit:\n  $$\n  40 + 60 = \\boxed{100}\n  $$\n\n---\n\n### \u2705 Final Answer:\n#### **$100**.",
+        "correct": false,
+        "probability": 0.24414385235283628,
+        "answer_mean_probability": 0.3842454348731611
+      },
+      {
+        "index": 1,
+        "answer": "80",
+        "text": "Tom buys 20 shares at $3 each, so the total cost is:\n\n$$\n20 \\times 3 = 60 \\text{ dollars}\n$$\n\nHe sells 10 shares at $4 each, so the proceeds are:\n\n$$\n10 \\times 4 = 40 \\text{ dollars}\n$$\n\nThe remaining 10 shares end up doubling in value, so their value becomes:\n\n$$\n10 \\times 3 \\times 2 = 60 \\text{ dollars}\n$$\n\nNow, calculate the total profit:\n\n$$\n\\text{Profit} = \\text{Total Cost} - \\text{Total Sale} + \\text{Value of Doubled Shares}\n$$\n\n$$\n\\text{Profit} = 60 - 40 + 60 = 80 \\text{ dollars}\n$$\n\n### Final Answer:\n$$\n\\boxed{80}\n$$",
+        "correct": false,
+        "probability": 0.30437755148701284,
+        "answer_mean_probability": 0.30437755148701284
+      },
+      {
+        "index": 2,
+        "answer": "40",
+        "text": "Tom buys 20 shares of a stock that costs $3 each, so the total cost is:\n\n$$\n20 \\times 3 = 60 \\text{ dollars}\n$$\n\nHe sells 10 shares for $4 each, so the proceeds from the sale are:\n\n$$\n10 \\times 4 = 40 \\text{ dollars}\n$$\n\nThe remaining shares (10 shares) end up doubling in value. Let\u2019s assume the price doubles to $6 each. Then the value of the remaining 10 shares is:\n\n$$\n10 \\times 6 = 60 \\text{ dollars}\n$$\n\nNow, calculate his total profit:\n\n$$\n\\text{Total profit} = \\text{Sale proceeds} + \\text{Value of remaining shares} - \\text{Original cost}\n$$\n$$\n= 40 + 60 - 60 = 40 \\text{ dollars}\n$$\n\n### Final Answer:\n$$\n\\boxed{40}\n$$",
+        "correct": true,
+        "probability": 0.4041706850254131,
+        "answer_mean_probability": 0.4041706850254131
+      },
+      {
+        "index": 3,
+        "answer": "100",
+        "text": "We are given:\n\n- Tom buys **20 shares** at **$3 each**, for a total of **$60**.\n- He sells **10 shares** at **$4 each**, for a total of **$40**.\n- The **remaining 10 shares** double in value, so they now cost **$3 \u00d7 2 = $6 each**.\n\nNow calculate the total profit:\n\n- Total profit = (Selling price - Cost price) \u00d7 number of shares sold  \n  = ($40 - $30) \u00d7 10  \n  = $10 \u00d7 10  \n  = **$100**\n\n### Final Answer:\n#### $100.",
+        "correct": false,
+        "probability": 0.5243470173934859,
+        "answer_mean_probability": 0.3842454348731611
+      }
+    ]
+  },
+  {
+    "category": "full_wrong_majority_correct",
+    "split": "validation",
+    "id": "gsm8k:773786fcabb05faa06c66d6d093435b308e51cf550c4871924f6fd53f91dd9b8",
+    "question": "Isabelle gets a job so she can save enough money to go to a concert with her two brothers. Her ticket costs $20. Her brothers both get the children\u2019s discount, and each of their tickets cost $10. Her brothers have saved $5 between the two of them and Isabelle has saved $5. If her job pays $3 per week, how many weeks must she work to afford the tickets?",
+    "gold_answer": "10",
+    "full_candidate": 3,
+    "majority_candidate": 0,
+    "answer_score_gap": 0.018424539851963073,
+    "candidates": [
+      {
+        "index": 0,
+        "answer": "10",
+        "text": "Isabelle saves money over time. Here's the breakdown:\n\n- **Her brothers' tickets:** $10 each, so together they save $20.\n- **Isabelle's savings:** $5 (from her) + $5 (from her brothers) = $10.\n- **Total savings:** $20 (brothers) + $10 (Isabelle) = **$30**.\n\n- **Her job pays $3 per week**, so she needs to work:\n\n$$\n\\frac{30}{3} = \\boxed{10} \\text{ weeks}\n$$\n\n**Answer:** $10.",
+        "correct": true,
+        "probability": 0.2371739105525096,
+        "answer_mean_probability": 0.2371739105525096
+      },
+      {
+        "index": 1,
+        "answer": "20",
+        "text": "Isabelle's total savings needed is:\n\n- Her brothers' tickets: $10 each \u2192 $20  \n- Her ticket: $20  \n- Total needed: $20 + $20 + $20 = **$60**\n\nShe saves $5 from her brothers and $5 from herself \u2192 total saved: **$10**\n\nHer job pays $3 per week. To save $60, she needs:\n\n$$\n\\frac{60}{3} = \\boxed{20} \\text{ weeks}\n$$\n\n#### <numeric answer> 20",
+        "correct": false,
+        "probability": 0.2339973824307588,
+        "answer_mean_probability": 0.2339973824307588
+      },
+      {
+        "index": 2,
+        "answer": "11",
+        "text": "Isabelle's total savings needed is:\n\n- Her brothers: $5 (each of them) = $10  \n- Isabelle: $5  \n- Total needed = $10 + $5 + $20 = **$35**\n\nHer job pays $3 per week. So:\n\n$$\n\\text{Number of weeks} = \\frac{35}{3} \\approx \\boxed{11}\n$$\n\n#### <numeric answer> = **11**.",
+        "correct": false,
+        "probability": 0.2862533206185897,
+        "answer_mean_probability": 0.2862533206185897
+      },
+      {
+        "index": 3,
+        "answer": "6",
+        "text": "Isabelle saves:\n\n- $5 from her brothers (2 people, $10 each) = $10  \n- $5 from Isabelle = $5  \n\nTotal saved: $10 + $5 = **$15**\n\nHer job pays $3 per week.  \nShe needs $20 for the concert.  \n\nHow many weeks does she need to work:  \n$$\n\\frac{20}{3} \\approx \\boxed{6}\n$$\n\n#### <numeric answer> 6",
+        "correct": false,
+        "probability": 0.3046778604705528,
+        "answer_mean_probability": 0.3046778604705528
+      }
+    ]
+  },
+  {
+    "category": "full_wrong_majority_correct",
+    "split": "validation",
+    "id": "gsm8k:634b7ae6b751954ca8a708a11028be4f124148328ccf0d31304c4d4ee5238de4",
+    "question": "Harry uses a whole bag of chocolate chips when he makes dough for chocolate chip cookies. The dough makes three batches of cookies, and each cookie has nine chocolate chips in it. A bag of chocolate chips has 81 chips in it. How many cookies are in a batch?",
+    "gold_answer": "3",
+    "full_candidate": 0,
+    "majority_candidate": 1,
+    "answer_score_gap": 0.04098240981112633,
+    "candidates": [
+      {
+        "index": 0,
+        "answer": "9",
+        "text": "We are given:\n\n- A bag of chocolate chips has **81 chips**.\n- Each batch requires **3 batches** of cookies.\n- Each cookie has **9 chips**.\n- We are to find the number of **cookies in a batch**.\n\n---\n\n### Step 1: Find the total number of chips used in all batches\n\n- 1 batch = 3 cookies \u00d7 9 chips = 27 chips  \n- 3 batches = 27 chips \u00d7 3 = **81 chips** \u2705\n\n---\n\n### Step 2: Find the number of cookies in a batch\n\n- 81 chips \u00f7 9 chips per cookie = **9 cookies**\n\n---\n\n### Final Answer:\n\n$$\n\\boxed{9}\n$$",
+        "correct": false,
+        "probability": 0.6135861693258529,
+        "answer_mean_probability": 0.6135861693258529
+      },
+      {
+        "index": 1,
+        "answer": "3",
+        "text": "We are told:\n\n- A bag of chocolate chips has **81 chips**.\n- A **batch** makes **3 cookies**.\n- Each **cookie** has **9 chips**.\n\n---\n\n### Step 1: Find the number of chips per batch\n\nWe can find the number of chips per batch by dividing the total chips by the number of cookies:\n\n$$\n\\text{Chips per batch} = \\frac{81}{3} = 27\n$$\n\n---\n\n### Step 2: Find the number of cookies per batch\n\nWe are told that each batch makes **3 cookies**, so:\n\n$$\n\\boxed{3}\n$$\n\n---\n\n### Final Answer:\n\n$$\n\\boxed{3}\n$$",
+        "correct": true,
+        "probability": 0.3694326639170066,
+        "answer_mean_probability": 0.5726037595147265
+      },
+      {
+        "index": 2,
+        "answer": "3",
+        "text": "We are given:\n\n- A bag of chocolate chips has **81 chips**.\n- A batch makes **3 cookies**.\n- Each cookie has **9 chips**.\n\n### Step 1: Find how many chips are in a batch\n\nWe know:\n\n- 1 batch = 3 cookies  \n- 1 cookie = 9 chips\n\nSo, 1 batch = $ 3 \\times 9 = 27 $ chips\n\n### Step 2: Find how many cookies are in a batch\n\nWe are asked to find the number of **cookies in a batch**, which we already calculated as:\n\n$$\n\\boxed{3}\n$$\n\n### Final Answer:\n$$\n\\boxed{3}\n$$",
+        "correct": true,
+        "probability": 0.47713062790607885,
+        "answer_mean_probability": 0.5726037595147265
+      },
+      {
+        "index": 3,
+        "answer": "3",
+        "text": "We are given:\n\n- A bag of chocolate chips contains **81 chips**.\n- Each **batch** of cookies requires **3 batches**.\n- Each **cookie** contains **9 chocolate chips**.\n- We want to find the number of **cookies in a batch**.\n\n---\n\n### Step 1: Find how many chips are used per batch\n\nWe know that:\n\n- 1 batch = 3 cookies  \n- Each cookie has 9 chips  \n- Total chips in a bag = 81\n\nSo:\n\n$$\n\\text{Chips per batch} = \\frac{81}{3} = 27\n$$\n\n---\n\n### Step 2: Find how many cookies are in a batch\n\nSince 1 batch = 3 cookies, and 27 chips per batch:\n\n$$\n\\text{Cookies per batch} = \\frac{27}{9} = 3\n$$\n\n---\n\n### Final Answer:\n\n$$\n\\boxed{3}\n$$",
+        "correct": true,
+        "probability": 0.8712479867210942,
+        "answer_mean_probability": 0.5726037595147265
+      }
+    ]
+  },
+  {
+    "category": "full_wrong_majority_correct",
+    "split": "validation",
+    "id": "gsm8k:23362ebace3d656a190008ccbe883f572f150f9ba5f32f98336611e050abb075",
+    "question": "A plumber is trying to decide which of three different jobs he should take to make the most money.  The first job involves fixing three toilets and three sinks at an apartment complex.  The second involves two toilets and five sinks at a different apartment complex.  The third involves fixing one toilet, two showers and three sinks at a third apartment complex.  If the plumber charges $30 to fix a sink, $40 to fix a shower and $50 to fix a toilet, what is the most money the plumber can earn if he can only choose one of these three jobs?",
+    "gold_answer": "250",
+    "full_candidate": 1,
+    "majority_candidate": 0,
+    "answer_score_gap": 0.14591076827796795,
+    "candidates": [
+      {
+        "index": 0,
+        "answer": "250",
+        "text": "We are given:\n\n- **Job 1**: 3 toilets, 3 sinks \u2192 $30 sink + $40 shower + $50 toilet  \n- **Job 2**: 2 toilets, 5 sinks \u2192 $30 sink + $40 shower + $50 toilet  \n- **Job 3**: 1 toilet, 2 showers, 3 sinks \u2192 $30 sink + $40 shower + $50 toilet  \n\nWe are to find the **most money** the plumber can earn by choosing **one job**.\n\n### Step-by-step:\n\n1. **Calculate the cost for each job**:\n   - **Job 1**:  \n     $ 3 \\times 50 + 3 \\times 30 + 0 = 150 + 90 = \\$240 $\n   - **Job 2**:  \n     $ 2 \\times 50 + 5 \\times 30 = 100 + 150 = \\$250 $\n   - **Job 3**:  \n     $ 1 \\times 50 + 2 \\times 40 + 3 \\times 30 = 50 + 80 + 90 = \\$220 $\n\n2. **Compare costs**:\n   - Job 1: \\$240  \n   - Job 2: \\$250  \n   - Job 3: \\$220\n\n### \u2705 Final Answer:\n\n$$\n\\boxed{250}\n$$",
+        "correct": true,
+        "probability": 0.199813539676776,
+        "answer_mean_probability": 0.199813539676776
+      },
+      {
+        "index": 1,
+        "answer": "3",
+        "text": "We are given the following information:\n\n- **Job 1**: 3 toilets, 3 sinks  \n- **Job 2**: 2 toilets, 5 sinks  \n- **Job 3**: 1 toilet, 2 showers, 3 sinks  \n\nThe plumber charges:\n\n- $30 per sink  \n- $40 per shower  \n- $50 per toilet  \n\nWe are to find the **maximum** amount the plumber can earn by choosing **one** of the three jobs.\n\n### Step 1: Calculate the total earnings for each job\n\n#### **Job 1**:\n- 3 toilets \u00d7 $50 = $150  \n- 3 sinks \u00d7 $30 = $90  \n- **Total earnings**: $150 + $90 = **$240**\n\n#### **Job 2**:\n- 2 toilets \u00d7 $50 = $100  \n- 5 sinks \u00d7 $30 = $150  \n- **Total earnings**: $100 + $150 = **$250**\n\n#### **Job 3**:\n- 1 toilet \u00d7 $50 = $50  \n- 2 showers \u00d7 $40 = $80  \n- 3 sinks \u00d7 $30 = $90  \n- **Total earnings**: $50 + $80 + $90 = **$220**\n\n### Step 2: Compare the earnings\n\n- Job 1: $240  \n- Job 2: $250  \n- Job 3: $220\n\n### Step 3: Choose the job with the highest earnings\n\n**Job 2** gives the **most money**.\n\n### Final Answer:\n\n$$\n\\boxed{250}\n$$",
+        "correct": false,
+        "probability": 0.46017024090682107,
+        "answer_mean_probability": 0.46017024090682107
+      },
+      {
+        "index": 2,
+        "answer": null,
+        "text": "We are given the following costs for each job:\n\n- **Fixing 3 toilets and 3 sinks**:  \n  Cost = $30 \u00d7 3 + $50 \u00d7 3 = $150\n\n- **Fixing 2 toilets and 5 sinks**:  \n  Cost = $30 \u00d7 2 + $50 \u00d7 2 = $100\n\n- **Fixing 1 toilet, 2 showers, and 3 sinks**:  \n  Cost = $30 \u00d7 1 + $40 \u00d7 2 + $50 \u00d7 3 = $30 + $80 + $150 = $260\n\nNow, we compare the costs of the three jobs:\n\n- Job 1: $150  \n- Job 2: $100  \n- Job 3: $260\n\nThe **most money** the plumber can earn is from **Job 3**.\n\n### Final Answer:  \n**$260**.",
+        "correct": false,
+        "probability": 0.013202536153688226,
+        "answer_mean_probability": 0.0
+      },
+      {
+        "index": 3,
+        "answer": "360",
+        "text": "We are given the following costs for each job:\n\n- **Job 1**: 3 toilets, 3 sinks  \n  - Cost: $30 \u00d7 3 (sinks) + $40 \u00d7 3 (showers) + $50 \u00d7 3 (toilets)  \n  - Total: $90 + $120 + $150 = **$360**\n\n- **Job 2**: 2 toilets, 5 sinks  \n  - Cost: $30 \u00d7 2 (sinks) + $40 \u00d7 5 (showers) + $50 \u00d7 2 (toilets)  \n  - Total: $60 + $200 + $100 = **$360**\n\n- **Job 3**: 1 toilet, 2 showers, 3 sinks  \n  - Cost: $30 \u00d7 3 (sinks) + $40 \u00d7 2 (showers) + $50 \u00d7 1 (toilet)  \n  - Total: $90 + $80 + $50 = **$220**\n\n### Final Answer:\n$$\n\\boxed{360}\n$$",
+        "correct": false,
+        "probability": 0.3142594726288531,
+        "answer_mean_probability": 0.3142594726288531
+      }
+    ]
+  },
+  {
+    "category": "both_wrong",
+    "split": "validation",
+    "id": "gsm8k:2034d638483acc432406059ee65a7e93530aa82dc3a663f6a72e54f98dbdc5b8",
+    "question": "Salem is 15 times the size of Leesburg. Leesburg has 58940 people. If 130000 people move out of Salem, and half of Salem's population is women, how many women live in Salem?",
+    "gold_answer": "377050",
+    "full_candidate": 0,
+    "majority_candidate": 0,
+    "answer_score_gap": 0.07411834418726437,
+    "candidates": [
+      {
+        "index": 0,
+        "answer": "376550",
+        "text": "We are given:\n\n- Salem is **15 times** the size of Leesburg.\n- Leesburg has **58,940** people.\n- **13,0000** people move out of Salem.\n- **Half of Salem's population is women**.\n\n---\n\n### Step 1: Find Salem's population\n\nSince Salem is 15 times the size of Leesburg:\n\n$$\n\\text{Salem's population} = 15 \\times 58,940 = 883,100\n$$\n\n---\n\n### Step 2: Subtract the number of people who moved out\n\n$$\n\\text{Remaining people in Salem} = 883,100 - 130,000 = 753,100\n$$\n\n---\n\n### Step 3: Find the number of women in Salem\n\nHalf of Salem's population is women:\n\n$$\n\\text{Women in Salem} = \\frac{1}{2} \\times 753,100 = 376,550\n$$\n\n---\n\n### Final Answer:\n\n$$\n\\boxed{376550}\n$$",
+        "correct": false,
+        "probability": 0.6583894291751704,
+        "answer_mean_probability": 0.6500407277048981
+      },
+      {
+        "index": 1,
+        "answer": "377050",
+        "text": "We are given:\n\n- Salem has **15 times** the size of Leesburg.\n- Leesburg has **58,940** people.\n- **130,000** people **move out** of Salem.\n- **Half of Salem's population is women**.\n\n---\n\n### Step 1: Find Salem's population\n\nSince Salem is 15 times larger than Leesburg:\n\n$$\n\\text{Salem's population} = 15 \\times 58,940 = 884,100\n$$\n\n---\n\n### Step 2: Subtract people moving out\n\n$$\n\\text{Remaining population} = 884,100 - 130,000 = 754,100\n$$\n\n---\n\n### Step 3: Find the number of women in Salem\n\nHalf of Salem's population is women:\n\n$$\n\\text{Number of women} = \\frac{1}{2} \\times 754,100 = 377,050\n$$\n\n---\n\n### \u2705 Final Answer:\n\n$$\n\\boxed{377050}\n$$",
+        "correct": true,
+        "probability": 0.5759223835176337,
+        "answer_mean_probability": 0.5759223835176337
+      },
+      {
+        "index": 2,
+        "answer": "376550",
+        "text": "We are given:\n\n- Leesburg has **58,940** people.\n- Salem is **15 times** the size of Leesburg: $15 \\times 58,940 = 883,100$.\n- **13,0000** people move out of Salem.\n- Half of Salem's population is women.\n\n---\n\n### Step 1: Find the current population of Salem\n\n$$\n\\text{Salem's current population} = 15 \\times 58,940 = 883,100\n$$\n\n---\n\n### Step 2: Subtract the people who moved out\n\n$$\n\\text{Salem's population after removal} = 883,100 - 130,000 = 753,100\n$$\n\n---\n\n### Step 3: Find the number of women in Salem\n\nHalf of Salem's population is women:\n\n$$\n\\text{Women in Salem} = \\frac{1}{2} \\times 753,100 = 376,550\n$$\n\n---\n\n### Final Answer:\n\n$$\n\\boxed{376550}\n$$",
+        "correct": false,
+        "probability": 0.6287167344306253,
+        "answer_mean_probability": 0.6500407277048981
+      },
+      {
+        "index": 3,
+        "answer": "376550",
+        "text": "We are given the following:\n\n- Salem has **15 times** the size of Leesburg.\n- Leesburg has **58,940** people.\n- **13,0000** people move out of Salem.\n- **Half of Salem's population is women**.\n\n---\n\n### Step 1: Find the population of Salem\n\nSince Salem is **15 times** larger than Leesburg:\n\n$$\n\\text{Population of Salem} = 15 \\times 58,940 = 883,100\n$$\n\n---\n\n### Step 2: Subtract the number of people who moved out\n\n$$\n\\text{Remaining population of Salem} = 883,100 - 130,000 = 753,100\n$$\n\n---\n\n### Step 3: Find the number of women in Salem\n\nSince **half of Salem's population is women**:\n\n$$\n\\text{Number of women in Salem} = \\frac{1}{2} \\times 753,100 = 376,550\n$$\n\n---\n\n### \u2705 Final Answer:\n\n$$\n\\boxed{376550}\n$$",
+        "correct": false,
+        "probability": 0.6630160195088985,
+        "answer_mean_probability": 0.6500407277048981
+      }
+    ]
+  },
+  {
+    "category": "both_wrong",
+    "split": "validation",
+    "id": "gsm8k:ff39505c84c884ef03ca6f7d63c1c91d0d81ebae31e35c18d7d6fc6e63a6e958",
+    "question": "Five percent of the 300 senior students got a full merit college scholarship and ten percent of them got a half merit scholarship. How many senior students did not get any scholarships?",
+    "gold_answer": "255",
+    "full_candidate": 2,
+    "majority_candidate": 0,
+    "answer_score_gap": 0.07734983541123253,
+    "candidates": [
+      {
+        "index": 0,
+        "answer": "567/2",
+        "text": "We are given:\n\n- 5% of 300 senior students got a full merit college scholarship.\n- 10% of those students got a half merit scholarship.\n\nWe are to find how many senior students **did not** get any scholarships.\n\n### Step 1: Calculate the number of students who got a full merit scholarship\n$$\n5\\% \\text{ of } 300 = 0.05 \\times 300 = 15\n$$\n\n### Step 2: Calculate the number of students who got a half merit scholarship\n$$\n10\\% \\text{ of } 15 = 0.10 \\times 15 = 1.5\n$$\n\n### Step 3: Total number of students who got at least one scholarship\n$$\n15 + 1.5 = 16.5\n$$\n\n### Step 4: Total number of students who did **not** get any scholarships\n$$\n300 - 16.5 = 283.5\n$$\n\n### Final Answer:\n$$\n\\boxed{283.5}\n$$",
+        "correct": false,
+        "probability": 0.03989885464320483,
+        "answer_mean_probability": 0.03640579108780692
+      },
+      {
+        "index": 1,
+        "answer": "255",
+        "text": "We are given:\n\n- 5% of the 300 senior students got a **full merit scholarship**.\n- 10% of the students got a **half merit scholarship**.\n\nWe are to find how many **senior students did not get any scholarships**.\n\n---\n\n### Step 1: Calculate the number of students who got full merit scholarships\n\n$$\n5\\% \\text{ of } 300 = 0.05 \\times 300 = 15\n$$\n\nSo, **15 students** got full merit scholarships.\n\n---\n\n### Step 2: Calculate the number of students who got half merit scholarships\n\n$$\n10\\% \\text{ of } 300 = 0.10 \\times 300 = 30\n$$\n\nSo, **30 students** got half merit scholarships.\n\n---\n\n### Step 3: Subtract the number of students who got scholarships from the total to find those who did **not** get any scholarships\n\n$$\n300 - (15 + 30) = 300 - 45 = 255\n$$\n\n---\n\n### \u2705 Final Answer:\n\n$$\n\\boxed{255}\n$$",
+        "correct": true,
+        "probability": 0.7913294037272528,
+        "answer_mean_probability": 0.7913294037272528
+      },
+      {
+        "index": 2,
+        "answer": "190",
+        "text": "We are given:\n\n- 5% of 300 senior students got a full merit scholarship:  \n  $ 0.05 \\times 300 = 15 $\n\n- 10% of the remaining 950 students got a half merit scholarship:  \n  $ 0.10 \\times 950 = 95 $\n\nSo, total number of students who got at least one scholarship is:  \n$$ 15 + 95 = 110 $$\n\nNow, subtract this from the total number of students:  \n$$ 300 - 110 = 190 $$\n\n### Final Answer:\n$$\n\\boxed{190}\n$$",
+        "correct": false,
+        "probability": 0.8686792391384853,
+        "answer_mean_probability": 0.8686792391384853
+      },
+      {
+        "index": 3,
+        "answer": "567/2",
+        "text": "We are given:\n\n- 5% of 300 senior students got a full merit scholarship.\n- 10% of those same students got a half merit scholarship.\n\n### Step 1: Calculate the number of students who got full merit scholarships\n\n$$\n5\\% \\text{ of } 300 = 0.05 \\times 300 = 15\n$$\n\nSo, 15 students got a full merit scholarship.\n\n### Step 2: Calculate the number of students who got a half merit scholarship\n\n$$\n10\\% \\text{ of } 15 = 0.10 \\times 15 = 1.5\n$$\n\nSo, 1.5 students got a half merit scholarship.\n\n### Step 3: Find how many students did **not** get any scholarships\n\n$$\n300 - 15 - 1.5 = 283.5\n$$\n\n### Final Answer:\n\n$$\n\\boxed{283.5}\n$$",
+        "correct": false,
+        "probability": 0.032912727532409015,
+        "answer_mean_probability": 0.03640579108780692
+      }
+    ]
+  },
+  {
+    "category": "both_wrong",
+    "split": "validation",
+    "id": "gsm8k:9bb5fbe86fef3370a75fd8d35c55e52bb22a8726cfeacedb042e6f1ae65222d8",
+    "question": "Erik's dog can run 24 miles per hour. It is chasing a rabbit that can run 15 miles per hour. The rabbit has a head start of .6 miles. How many minutes does it take for the dog to catch up to the rabbit?",
+    "gold_answer": "4",
+    "full_candidate": 0,
+    "majority_candidate": 0,
+    "answer_score_gap": 0.0891092239755622,
+    "candidates": [
+      {
+        "index": 0,
+        "answer": "8",
+        "text": "We are given:\n\n- Erik's dog runs at **24 mph**.\n- The rabbit runs at **15 mph**.\n- The rabbit has a **head start of 0.6 miles**.\n\nWe want to find how long it takes for the dog to **catch up** to the rabbit.\n\n---\n\n### Step 1: Find the relative speed\n\nSince the dog is faster than the rabbit, the **relative speed** at which the dog is closing the gap is:\n\n$$\n24\\ \\text{mph} - 15\\ \\text{mph} = 9\\ \\text{mph}\n$$\n\n---\n\n### Step 2: Calculate the time to catch up\n\nThe head start is 0.6 miles, and the dog closes that gap at 9 mph. So:\n\n$$\n\\text{Time} = \\frac{\\text{Head Start}}{\\text{Relative Speed}} = \\frac{0.6}{9} = \\frac{2}{15} \\text{ hours}\n$$\n\n---\n\n### Step 3: Convert hours to minutes\n\n$$\n\\frac{2}{15} \\text{ hours} \\times 60\\ \\text{minutes/hour} = 8 \\text{ minutes}\n$$\n\n---\n\n### \u2705 Final Answer:\n\n$$\n\\boxed{8} \\text{ minutes}\n$$",
+        "correct": false,
+        "probability": 0.7560183549336302,
+        "answer_mean_probability": 0.6454896110557028
+      },
+      {
+        "index": 1,
+        "answer": "4",
+        "text": "We are given:\n\n- **Dog's speed**: 24 miles/hour  \n- **Rabbit's speed**: 15 miles/hour  \n- **Head start**: 0.6 miles  \n\nWe need to find how long it takes for the **dog** to catch up to the **rabbit**.\n\n---\n\n### Step 1: Find the relative speed\n\nThe dog is **24 - 15 = 9 mph** faster than the rabbit.\n\n---\n\n### Step 2: Set up the equation\n\nLet $ t $ be the time in hours it takes for the dog to catch up.\n\nIn $ t $ hours, the dog covers:\n\n$$\n24t \\text{ miles}\n$$\n\nThe rabbit covers:\n\n$$\n15t \\text{ miles}\n$$\n\nSince the dog catches up, the distance the dog covers must be **equal to** the distance the rabbit covers plus the head start:\n\n$$\n24t = 15t + 0.6\n$$\n\n---\n\n### Step 3: Solve for $ t $\n\n$$\n24t - 15t = 0.6 \\\\\n9t = 0.6 \\\\\nt = \\frac{0.6}{9} = 0.0667 \\text{ hours}\n$$\n\n---\n\n### Step 4: Convert to minutes\n\n$$\n0.0667 \\text{ hours} \\times 60 \\text{ minutes/hour} = 4 \\text{ minutes}\n$$\n\n---\n\n### \u2705 Final Answer:\n\n$$\n\\boxed{4} \\text{ minutes}\n$$",
+        "correct": true,
+        "probability": 0.5563803870801406,
+        "answer_mean_probability": 0.5563803870801406
+      },
+      {
+        "index": 2,
+        "answer": "8",
+        "text": "We are given:\n\n- Dog's speed = 24 mph  \n- Rabbit's speed = 15 mph  \n- Head start = 0.6 miles  \n\nWe need to find the time it takes for the dog to **catch up** the rabbit.\n\n### Step 1: Find the relative speed\nSince the dog is faster than the rabbit, the time it takes for the dog to catch up is the time it takes for the **dog to cover the head start**.\n\nThe distance the dog needs to cover is the head start:\n\n$$\n\\text{Distance} = 0.6 \\text{ miles}\n$$\n\nThe relative speed of the dog compared to the rabbit is:\n\n$$\n24 - 15 = 9 \\text{ mph}\n$$\n\n### Step 2: Time to catch up\n\n$$\n\\text{Time} = \\frac{\\text{Distance}}{\\text{Relative speed}} = \\frac{0.6}{9} = \\frac{2}{15} \\text{ hours}\n$$\n\n### Step 3: Convert to minutes\n\n$$\n\\frac{2}{15} \\text{ hours} \\times 60 \\text{ minutes/hour} = \\frac{120}{15} = 8 \\text{ minutes}\n$$\n\n### Final Answer:\n\n$$\n\\boxed{8} \\text{ minutes}\n$$",
+        "correct": false,
+        "probability": 0.8180578986397514,
+        "answer_mean_probability": 0.6454896110557028
+      },
+      {
+        "index": 3,
+        "answer": "8",
+        "text": "We are given:\n\n- Dog's speed = 24 mph  \n- Rabbit's speed = 15 mph  \n- Head start for the rabbit = 0.6 miles  \n\nWe want to find how long it takes for the dog to **catch up** to the rabbit.\n\n---\n\n### Step 1: Find the time it takes for the dog to catch up\n\nThe distance the dog covers is equal to the distance the rabbit has already covered plus the distance the dog needs to cover to catch up.\n\n- Distance the dog covers = 24 mph \u00d7 time  \n- Distance the rabbit covers = 15 mph \u00d7 time  \n\nWe want to find the time when:\n\n$$\n24t = 15t + 0.6\n$$\n\nSolve for $ t $:\n\n$$\n24t - 15t = 0.6 \\\\\n9t = 0.6 \\\\\nt = \\frac{0.6}{9} = \\frac{2}{15} \\text{ hours}\n$$\n\n---\n\n### Step 2: Convert time to minutes\n\n$$\n\\frac{2}{15} \\text{ hours} \\times 60 \\text{ minutes/hour} = \\frac{120}{15} = 8 \\text{ minutes}\n$$\n\n---\n\n### \u2705 Final Answer:\n\n$$\n\\boxed{8} \\text{ minutes}\n$$",
+        "correct": false,
+        "probability": 0.3623925795937269,
+        "answer_mean_probability": 0.6454896110557028
+      }
+    ]
+  }
+]

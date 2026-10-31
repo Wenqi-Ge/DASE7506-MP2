@@ -1,0 +1,10 @@
+{
+  "current_study": "Current v73 candidate-selection ensemble",
+  "implementation_and_reproduction_completed": true,
+  "current_test_correct": 402,
+  "current_test_n": 467,
+  "current_test_accuracy": 86.0813704496788,
+  "target85_achieved": true,
+  "target85_status": "Achieved with402/467; all467 choices agree on local/new-ser.",
+  "test_policy": "Only validation-selected v73 tested in this stage, then reproduced unchanged on the second host. No TEST item-level correctness analysis or post-test variant selection."
+}

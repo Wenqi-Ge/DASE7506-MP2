@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "at_local_utc": "2026-10-30T15:26:05.869690+00:00",
+  "inference_assets_unchanged": true,
+  "clean_new_ser_test_correct": 402,
+  "clean_new_ser_test_n": 467,
+  "clean_new_ser_total_seconds": 8.893130018026568,
+  "clean_new_ser_all467_choices_equal_to_prior_run": true,
+  "clean_local_validation_all798_choices_equal": true,
+  "numpy_only_inference": true,
+  "clean_package_unit_tests_passed": 9,
+  "official_data_check_passed": true,
+  "method_parameters_changed": false
+}

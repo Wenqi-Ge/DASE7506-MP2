@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "pages": 8,
+  "page_limit": 10,
+  "tables": 9,
+  "figures": 2,
+  "all_pages_visually_reviewed": true,
+  "layout_findings": "All eight final pages checked; no clipping, overlap, broken tables or missing glyphs.",
+  "author_fields_supplied": false,
+  "pdf_sha256": "6e4ce82b8ddbb6b9ec9e26983d356d010a4cc264e1782d566d03570b963702cf",
+  "references": "Five verified papers with primary-source URLs.",
+  "render_long_edge_pixels": 1200,
+  "learned_weights_changed": false,
+  "prediction_results_verified": true
+}

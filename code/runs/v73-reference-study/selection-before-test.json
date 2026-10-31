@@ -1,0 +1,19 @@
+{
+  "at_utc": "2026-10-30T15:16:45.932687+00:00",
+  "selected": "v73",
+  "configuration": {
+    "weights": {
+      "tree_log": 0.5,
+      "compact_balanced": 0.3333333333333333,
+      "rich": 0.16666666666666666
+    },
+    "pooling": 1.0,
+    "correct": 758,
+    "trap_correct": 41,
+    "candidate_brier": 0.09449548402206584
+  },
+  "selection_basis": "Validation selection for the deployed ensemble.",
+  "test_accessed_in_this_stage": false,
+  "validation_is_adaptive": true,
+  "metadata_at_utc": "2026-10-31T10:48:32.526888+00:00"
+}

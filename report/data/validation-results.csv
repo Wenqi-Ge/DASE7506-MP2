@@ -1,0 +1,11 @@
+name,kind,description,correct,n,accuracy,informative_correct,informative_n,informative_accuracy,trap_correct,trap_n,delta_correct_vs_full,full_fixes,full_regressions
+Majority answer,baseline,Most frequent canonical valid answer; first candidate breaks ties.,688,798,86.21553884711778,245,355,69.01408450704226,0,60,-70,82,12
+First candidate,baseline,Select candidate zero without learned evidence.,624,798,78.19548872180451,195,355,54.929577464788736,19,60,-134,148,14
+tree_log,component,Frozen standalone component with same-answer mean pooling.,751,798,94.11027568922306,308,355,86.76056338028168,33,60,-7,9,2
+compact_balanced,component,Frozen standalone component with same-answer mean pooling.,739,798,92.60651629072682,296,355,83.38028169014085,44,60,-19,26,7
+rich,component,Frozen standalone component with same-answer mean pooling.,740,798,92.73182957393483,297,355,83.66197183098592,47,60,-18,27,9
+Full frozen ensemble,primary,"Frozen tree 1/2, balanced compact attention 1/3, rich attention 1/6; pooling 1.",758,798,94.9874686716792,315,355,88.73239436619718,41,60,0,0,0
+Without tree_log,fixed_weight_deletion,Delete one component; renormalize remaining frozen weights; no reoptimization.,744,798,93.23308270676691,301,355,84.78873239436619,46,60,-14,19,5
+Without compact_balanced,fixed_weight_deletion,Delete one component; renormalize remaining frozen weights; no reoptimization.,753,798,94.3609022556391,310,355,87.32394366197182,35,60,-5,7,2
+Without rich,fixed_weight_deletion,Delete one component; renormalize remaining frozen weights; no reoptimization.,755,798,94.61152882205513,312,355,87.88732394366198,38,60,-3,3,0
+Without answer pooling,decision_ablation,Keep all component probabilities and weights; select maximum candidate probability.,753,798,94.3609022556391,310,355,87.32394366197182,34,60,-5,7,2

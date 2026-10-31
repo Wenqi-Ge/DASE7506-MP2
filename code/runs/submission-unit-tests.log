@@ -1,0 +1,14 @@
+test_all_neural_exports_and_permutation (test_reference_rebuild_v73.ReferenceRebuildTests.test_all_neural_exports_and_permutation) ... ok
+test_exact_arithmetic_and_repair_propagation (test_reference_rebuild_v73.ReferenceRebuildTests.test_exact_arithmetic_and_repair_propagation) ... ok
+test_feature_dimensions (test_reference_rebuild_v73.ReferenceRebuildTests.test_feature_dimensions) ... ok
+test_handwritten_regularization_matches_sklearn_C (test_reference_rebuild_v73.ReferenceRebuildTests.test_handwritten_regularization_matches_sklearn_C) ... ok
+test_lexical_export_matches_sparse_calculation (test_reference_rebuild_v73.ReferenceRebuildTests.test_lexical_export_matches_sparse_calculation) ... ok
+test_only_current_package_modules_imported (test_reference_rebuild_v73.ReferenceRebuildTests.test_only_current_package_modules_imported) ... ok
+test_pooling_numeric_equivalence_and_reference_isolation (test_reference_rebuild_v73.ReferenceRebuildTests.test_pooling_numeric_equivalence_and_reference_isolation) ... ok
+test_thousands_and_latex (test_reference_rebuild_v73.ReferenceRebuildTests.test_thousands_and_latex) ... ok
+test_unsafe_expressions_never_execute (test_reference_rebuild_v73.ReferenceRebuildTests.test_unsafe_expressions_never_execute) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.626s
+
+OK

@@ -1,0 +1,509 @@
+{
+  "passed": true,
+  "at_utc": "2026-10-30T16:18:02.818679+00:00",
+  "split": "validation",
+  "references_read": false,
+  "test_accessed": false,
+  "frozen_core_and_assets_unchanged": true,
+  "inference_files_bytes": 6820520,
+  "all_fp16_expanded_array_bytes": 12578048,
+  "inference_asset_limit_bytes": 16777216,
+  "assets": [
+    {
+      "file": "compact_balanced.npz",
+      "stored_bytes": 4044398,
+      "arrays": [
+        {
+          "name": "mean.npy",
+          "dtype": "<f4",
+          "bytes": 20920,
+          "expanded_fp32_bytes": 20920
+        },
+        {
+          "name": "scale.npy",
+          "dtype": "<f4",
+          "bytes": 20920,
+          "expanded_fp32_bytes": 20920
+        },
+        {
+          "name": "p::stem.weight.npy",
+          "dtype": "<f2",
+          "bytes": 1338880,
+          "expanded_fp32_bytes": 2677760
+        },
+        {
+          "name": "p::stem.bias.npy",
+          "dtype": "<f2",
+          "bytes": 1280,
+          "expanded_fp32_bytes": 2560
+        },
+        {
+          "name": "p::layers.0.norm_attention.weight.npy",
+          "dtype": "<f2",
+          "bytes": 1280,
+          "expanded_fp32_bytes": 2560
+        },
+        {
+          "name": "p::layers.0.norm_attention.bias.npy",
+          "dtype": "<f2",
+          "bytes": 1280,
+          "expanded_fp32_bytes": 2560
+        },
+        {
+          "name": "p::layers.0.norm_feedforward.weight.npy",
+          "dtype": "<f2",
+          "bytes": 1280,
+          "expanded_fp32_bytes": 2560
+        },
+        {
+          "name": "p::layers.0.norm_feedforward.bias.npy",
+          "dtype": "<f2",
+          "bytes": 1280,
+          "expanded_fp32_bytes": 2560
+        },
+        {
+          "name": "p::layers.0.qkv.weight.npy",
+          "dtype": "<f2",
+          "bytes": 491520,
+          "expanded_fp32_bytes": 983040
+        },
+        {
+          "name": "p::layers.0.qkv.bias.npy",
+          "dtype": "<f2",
+          "bytes": 3840,
+          "expanded_fp32_bytes": 7680
+        },
+        {
+          "name": "p::layers.0.attended.weight.npy",
+          "dtype": "<f2",
+          "bytes": 163840,
+          "expanded_fp32_bytes": 327680
+        },
+        {
+          "name": "p::layers.0.attended.bias.npy",
+          "dtype": "<f2",
+          "bytes": 1280,
+          "expanded_fp32_bytes": 2560
+        },
+        {
+          "name": "p::layers.0.expand.weight.npy",
+          "dtype": "<f2",
+          "bytes": 327680,
+          "expanded_fp32_bytes": 655360
+        },
+        {
+          "name": "p::layers.0.expand.bias.npy",
+          "dtype": "<f2",
+          "bytes": 2560,
+          "expanded_fp32_bytes": 5120
+        },
+        {
+          "name": "p::layers.0.contract.weight.npy",
+          "dtype": "<f2",
+          "bytes": 327680,
+          "expanded_fp32_bytes": 655360
+        },
+        {
+          "name": "p::layers.0.contract.bias.npy",
+          "dtype": "<f2",
+          "bytes": 1280,
+          "expanded_fp32_bytes": 2560
+        },
+        {
+          "name": "p::layers.1.norm_attention.weight.npy",
+          "dtype": "<f2",
+          "bytes": 1280,
+          "expanded_fp32_bytes": 2560
+        },
+        {
+          "name": "p::layers.1.norm_attention.bias.npy",
+          "dtype": "<f2",
+          "bytes": 1280,
+          "expanded_fp32_bytes": 2560
+        },
+        {
+          "name": "p::layers.1.norm_feedforward.weight.npy",
+          "dtype": "<f2",
+          "bytes": 1280,
+          "expanded_fp32_bytes": 2560
+        },
+        {
+          "name": "p::layers.1.norm_feedforward.bias.npy",
+          "dtype": "<f2",
+          "bytes": 1280,
+          "expanded_fp32_bytes": 2560
+        },
+        {
+          "name": "p::layers.1.qkv.weight.npy",
+          "dtype": "<f2",
+          "bytes": 491520,
+          "expanded_fp32_bytes": 983040
+        },
+        {
+          "name": "p::layers.1.qkv.bias.npy",
+          "dtype": "<f2",
+          "bytes": 3840,
+          "expanded_fp32_bytes": 7680
+        },
+        {
+          "name": "p::layers.1.attended.weight.npy",
+          "dtype": "<f2",
+          "bytes": 163840,
+          "expanded_fp32_bytes": 327680
+        },
+        {
+          "name": "p::layers.1.attended.bias.npy",
+          "dtype": "<f2",
+          "bytes": 1280,
+          "expanded_fp32_bytes": 2560
+        },
+        {
+          "name": "p::layers.1.expand.weight.npy",
+          "dtype": "<f2",
+          "bytes": 327680,
+          "expanded_fp32_bytes": 655360
+        },
+        {
+          "name": "p::layers.1.expand.bias.npy",
+          "dtype": "<f2",
+          "bytes": 2560,
+          "expanded_fp32_bytes": 5120
+        },
+        {
+          "name": "p::layers.1.contract.weight.npy",
+          "dtype": "<f2",
+          "bytes": 327680,
+          "expanded_fp32_bytes": 655360
+        },
+        {
+          "name": "p::layers.1.contract.bias.npy",
+          "dtype": "<f2",
+          "bytes": 1280,
+          "expanded_fp32_bytes": 2560
+        },
+        {
+          "name": "p::final_norm.weight.npy",
+          "dtype": "<f2",
+          "bytes": 1280,
+          "expanded_fp32_bytes": 2560
+        },
+        {
+          "name": "p::final_norm.bias.npy",
+          "dtype": "<f2",
+          "bytes": 1280,
+          "expanded_fp32_bytes": 2560
+        },
+        {
+          "name": "p::head.weight.npy",
+          "dtype": "<f2",
+          "bytes": 1280,
+          "expanded_fp32_bytes": 2560
+        },
+        {
+          "name": "p::head.bias.npy",
+          "dtype": "<f2",
+          "bytes": 10,
+          "expanded_fp32_bytes": 20
+        }
+      ],
+      "all_entries_uncompressed": true
+    },
+    {
+      "file": "config.json",
+      "stored_bytes": 504,
+      "arrays": []
+    },
+    {
+      "file": "rich.npz",
+      "stored_bytes": 1845262,
+      "arrays": [
+        {
+          "name": "mean.npy",
+          "dtype": "<f4",
+          "bytes": 27528,
+          "expanded_fp32_bytes": 27528
+        },
+        {
+          "name": "scale.npy",
+          "dtype": "<f4",
+          "bytes": 27528,
+          "expanded_fp32_bytes": 27528
+        },
+        {
+          "name": "p::stem.weight.npy",
+          "dtype": "<f2",
+          "bytes": 1321344,
+          "expanded_fp32_bytes": 2642688
+        },
+        {
+          "name": "p::stem.bias.npy",
+          "dtype": "<f2",
+          "bytes": 576,
+          "expanded_fp32_bytes": 1152
+        },
+        {
+          "name": "p::layers.0.norm_attention.weight.npy",
+          "dtype": "<f2",
+          "bytes": 576,
+          "expanded_fp32_bytes": 1152
+        },
+        {
+          "name": "p::layers.0.norm_attention.bias.npy",
+          "dtype": "<f2",
+          "bytes": 576,
+          "expanded_fp32_bytes": 1152
+        },
+        {
+          "name": "p::layers.0.norm_feedforward.weight.npy",
+          "dtype": "<f2",
+          "bytes": 576,
+          "expanded_fp32_bytes": 1152
+        },
+        {
+          "name": "p::layers.0.norm_feedforward.bias.npy",
+          "dtype": "<f2",
+          "bytes": 576,
+          "expanded_fp32_bytes": 1152
+        },
+        {
+          "name": "p::layers.0.qkv.weight.npy",
+          "dtype": "<f2",
+          "bytes": 165888,
+          "expanded_fp32_bytes": 331776
+        },
+        {
+          "name": "p::layers.0.qkv.bias.npy",
+          "dtype": "<f2",
+          "bytes": 1728,
+          "expanded_fp32_bytes": 3456
+        },
+        {
+          "name": "p::layers.0.attended.weight.npy",
+          "dtype": "<f2",
+          "bytes": 55296,
+          "expanded_fp32_bytes": 110592
+        },
+        {
+          "name": "p::layers.0.attended.bias.npy",
+          "dtype": "<f2",
+          "bytes": 576,
+          "expanded_fp32_bytes": 1152
+        },
+        {
+          "name": "p::layers.0.expand.weight.npy",
+          "dtype": "<f2",
+          "bytes": 110592,
+          "expanded_fp32_bytes": 221184
+        },
+        {
+          "name": "p::layers.0.expand.bias.npy",
+          "dtype": "<f2",
+          "bytes": 1152,
+          "expanded_fp32_bytes": 2304
+        },
+        {
+          "name": "p::layers.0.contract.weight.npy",
+          "dtype": "<f2",
+          "bytes": 110592,
+          "expanded_fp32_bytes": 221184
+        },
+        {
+          "name": "p::layers.0.contract.bias.npy",
+          "dtype": "<f2",
+          "bytes": 576,
+          "expanded_fp32_bytes": 1152
+        },
+        {
+          "name": "p::head.weight.npy",
+          "dtype": "<f2",
+          "bytes": 576,
+          "expanded_fp32_bytes": 1152
+        },
+        {
+          "name": "p::head.bias.npy",
+          "dtype": "<f2",
+          "bytes": 6,
+          "expanded_fp32_bytes": 12
+        },
+        {
+          "name": "p::direct.weight.npy",
+          "dtype": "<f2",
+          "bytes": 13764,
+          "expanded_fp32_bytes": 27528
+        }
+      ],
+      "all_entries_uncompressed": true
+    },
+    {
+      "file": "stack.npz",
+      "stored_bytes": 754576,
+      "arrays": [
+        {
+          "name": "base0_mean.npy",
+          "dtype": "<f4",
+          "bytes": 4924,
+          "expanded_fp32_bytes": 4924
+        },
+        {
+          "name": "base0_scale.npy",
+          "dtype": "<f4",
+          "bytes": 4924,
+          "expanded_fp32_bytes": 4924
+        },
+        {
+          "name": "base0_weights.npy",
+          "dtype": "<f4",
+          "bytes": 4924,
+          "expanded_fp32_bytes": 4924
+        },
+        {
+          "name": "base1_mean.npy",
+          "dtype": "<f4",
+          "bytes": 13116,
+          "expanded_fp32_bytes": 13116
+        },
+        {
+          "name": "base1_scale.npy",
+          "dtype": "<f4",
+          "bytes": 13116,
+          "expanded_fp32_bytes": 13116
+        },
+        {
+          "name": "base1_weights.npy",
+          "dtype": "<f4",
+          "bytes": 13116,
+          "expanded_fp32_bytes": 13116
+        },
+        {
+          "name": "base2_mean.npy",
+          "dtype": "<f4",
+          "bytes": 25404,
+          "expanded_fp32_bytes": 25404
+        },
+        {
+          "name": "base2_scale.npy",
+          "dtype": "<f4",
+          "bytes": 25404,
+          "expanded_fp32_bytes": 25404
+        },
+        {
+          "name": "base2_weights.npy",
+          "dtype": "<f4",
+          "bytes": 25404,
+          "expanded_fp32_bytes": 25404
+        },
+        {
+          "name": "base3_mean.npy",
+          "dtype": "<f4",
+          "bytes": 4924,
+          "expanded_fp32_bytes": 4924
+        },
+        {
+          "name": "base3_scale.npy",
+          "dtype": "<f4",
+          "bytes": 4924,
+          "expanded_fp32_bytes": 4924
+        },
+        {
+          "name": "base3_weights.npy",
+          "dtype": "<f4",
+          "bytes": 4924,
+          "expanded_fp32_bytes": 4924
+        },
+        {
+          "name": "base4_mean.npy",
+          "dtype": "<f4",
+          "bytes": 25404,
+          "expanded_fp32_bytes": 25404
+        },
+        {
+          "name": "base4_scale.npy",
+          "dtype": "<f4",
+          "bytes": 25404,
+          "expanded_fp32_bytes": 25404
+        },
+        {
+          "name": "base4_weights.npy",
+          "dtype": "<f4",
+          "bytes": 25404,
+          "expanded_fp32_bytes": 25404
+        },
+        {
+          "name": "projection_mean.npy",
+          "dtype": "<f4",
+          "bytes": 4096,
+          "expanded_fp32_bytes": 4096
+        },
+        {
+          "name": "projection_components.npy",
+          "dtype": "<f4",
+          "bytes": 262144,
+          "expanded_fp32_bytes": 262144
+        },
+        {
+          "name": "text_idf.npy",
+          "dtype": "<f4",
+          "bytes": 131072,
+          "expanded_fp32_bytes": 131072
+        },
+        {
+          "name": "text_coef.npy",
+          "dtype": "<f4",
+          "bytes": 131072,
+          "expanded_fp32_bytes": 131072
+        }
+      ],
+      "all_entries_uncompressed": true
+    },
+    {
+      "file": "tree_log.npz",
+      "stored_bytes": 175780,
+      "arrays": [
+        {
+          "name": "features.npy",
+          "dtype": "<i4",
+          "bytes": 7416,
+          "expanded_fp32_bytes": 7416
+        },
+        {
+          "name": "borders.npy",
+          "dtype": "<f4",
+          "bytes": 7416,
+          "expanded_fp32_bytes": 7416
+        },
+        {
+          "name": "offsets.npy",
+          "dtype": "<i4",
+          "bytes": 1236,
+          "expanded_fp32_bytes": 1236
+        },
+        {
+          "name": "leaves.npy",
+          "dtype": "<f8",
+          "bytes": 158208,
+          "expanded_fp32_bytes": 158208
+        },
+        {
+          "name": "scale.npy",
+          "dtype": "<i8",
+          "bytes": 8,
+          "expanded_fp32_bytes": 8
+        },
+        {
+          "name": "bias.npy",
+          "dtype": "<i8",
+          "bytes": 8,
+          "expanded_fp32_bytes": 8
+        }
+      ],
+      "all_entries_uncompressed": true
+    }
+  ],
+  "inspected_predictor": {
+    "peak_os_threads": 4,
+    "spawned_child_pids": [],
+    "loaded_cuda_or_torch_libraries": [],
+    "questions": 798
+  },
+  "note": "Fresh-process validation resource diagnostic only; complete official TEST timing remains in the benchmark records."
+}

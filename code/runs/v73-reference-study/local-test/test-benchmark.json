@@ -1,0 +1,50 @@
+{
+  "at_utc": "2026-10-30T15:18:54.990292+00:00",
+  "official_score": {
+    "protocol": "dase7506-mp2-open-hard-verifier-v5",
+    "split": "test",
+    "correct": 402,
+    "n": 467,
+    "accuracy": 86.0813704496788,
+    "scoring_seconds": 0.016149154005688615
+  },
+  "prediction_wall_seconds": 3.362879009997414,
+  "scoring_wall_seconds": 0.07670657899871003,
+  "total_wall_seconds": 3.439585588996124,
+  "cpu": "Intel(R) Core(TM) i9-14900KF",
+  "threads": 4,
+  "device": "cpu",
+  "asset_bytes": 6820520,
+  "reference_xeon_verified": false,
+  "numpy": "2.5.3",
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "numeric_backend": {
+    "OPENBLAS_CORETYPE": "Haswell",
+    "NPY_DISABLE_CPU_FEATURES": "X86_V4,AVX512_ICL,AVX512_SPR"
+  },
+  "commands": [
+    [
+      "/home/winky/Documents/code/hku-as-7506/DASE7506-MP2/code/runs/v64-inference-env/bin/python",
+      "/home/winky/Documents/code/hku-as-7506/DASE7506-MP2/code/predict.py",
+      "--method",
+      "/home/winky/Documents/code/hku-as-7506/DASE7506-MP2/code/submission_v73.py",
+      "--checkpoint",
+      "/home/winky/Documents/code/hku-as-7506/DASE7506-MP2/code/artifacts/v73/checkpoint",
+      "--split",
+      "test",
+      "--output",
+      "/home/winky/Documents/code/hku-as-7506/DASE7506-MP2/code/runs/v73-reference-study/local-test/test-predictions.json"
+    ],
+    [
+      "/home/winky/Documents/code/hku-as-7506/DASE7506-MP2/code/runs/v64-inference-env/bin/python",
+      "/home/winky/Documents/code/hku-as-7506/DASE7506-MP2/code/score_predictions.py",
+      "--split",
+      "test",
+      "--predictions",
+      "/home/winky/Documents/code/hku-as-7506/DASE7506-MP2/code/runs/v73-reference-study/local-test/test-predictions.json",
+      "--output",
+      "/home/winky/Documents/code/hku-as-7506/DASE7506-MP2/code/runs/v73-reference-study/local-test/test-score.json"
+    ]
+  ],
+  "run_freeze_sha256": "58f62464c1db152e123f555ffd14d5d096742431545ea36ce1844aeb6210a9e9"
+}

@@ -1,0 +1,46 @@
+Computation declaration for DASE7506 MP2 frozen v73
+
+I trained the submitted method on my local workstation:
+- CPU: Intel Core i9-14900KF.
+- RAM: 62.58 GiB visible to the operating system.
+- GPU used: one NVIDIA GeForce RTX 4090D; 24,564 MiB reported GPU memory.
+- NVIDIA driver: 580.173.02.
+- No multi-GPU training. The neural members were fitted sequentially.
+- CPU numerical libraries were configured for four threads.
+- Training software: Python 3.13.9, NumPy 2.4.4, SciPy 1.16.3,
+  scikit-learn 1.7.2, CatBoost 1.2.10, PyTorch 2.10.0+cu128.
+
+The recorded final v73 training and selection run took 212.74 seconds.
+This includes feature extraction, fitting, validation and the specified fusion search.
+Peak PyTorch allocated GPU memory was 388.13 MiB.
+This is not a whole-process GPU-memory or CPU-RAM peak measurement.
+The recorded runtime excludes environment setup, audits and report generation.
+
+Inference and formal evaluation:
+- CPU only, NumPy 2.5.3, Python 3.12, four numerical threads.
+- Local i9-14900KF: fresh prediction plus independent scoring 3.439586 seconds.
+- new-ser AMD EPYC 9354: fresh prediction plus independent scoring 8.893130 seconds.
+- new-ser has 125.77 GiB OS-visible RAM; no GPU is used for inference.
+- Timing includes startup, imports, input/model loading, preprocessing and every
+  selected ensemble member, followed by the independent official scorer.
+- A fresh validation-process diagnostic observed a peak of four OS threads,
+  no child workers and no loaded CUDA/Torch libraries.
+- The specified reference Xeon Platinum 8457C has not been measured.
+
+Inference assets:
+- All deployed files total 6,820,520 bytes = 6.5046 MiB, uncompressed.
+- NPZ entries are stored without ZIP compression.
+- All array data after expanding FP16 weights to FP32 total 12,578,048 bytes
+  = 11.9954 MiB, before small container/configuration overhead.
+- This inventory includes normalizers, PCA, lexical coefficients, configuration,
+  all five linear views, the tree and all eight selected neural members.
+- The fresh-process parsing cache begins empty and reuses current-input parsing
+  only. No precomputed TEST prediction, answer lookup, online API, external data
+  or additional pretrained weights are used.
+
+The frozen official score is 402/467 = 86.0813704496788%; all 467 choices match
+across local/new-ser and the standalone release. Exact numeric evidence is in
+code/runs/v73-reference-study and INFERENCE_ASSETS.json.
+
+OpenAI Codex substantially assisted implementation, experiments, diagnostics,
+figures and report drafting. AI assistance is disclosed in the README and report.

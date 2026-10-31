@@ -1,0 +1,96 @@
+{
+  "at_utc": "2026-10-30T15:10:09.036025+00:00",
+  "method": "v73_candidate_attention_ranker_ensemble_cpu",
+  "source_sha256": {
+    "submission_v73.py": "21c6a9c3a79fdea39bf404d01209b96b58a7b18d2b5a998a61ba2d49a202aca0",
+    "reference_rebuild_v73/__init__.py": "311ca8367451a982599da2d2d39467080e1c204bbe35c54e98465cf87d1c2bdb",
+    "reference_rebuild_v73/features.py": "454b546c31f27eac1e079fef81012dd0867d38512e864b0727c4984f7d616778",
+    "reference_rebuild_v73/maths.py": "b0fc361028aac554ba6cfcb95dc54f368aff0dfe05ed97e0481c1b908e15c001",
+    "reference_rebuild_v73/net.py": "917114ba6dffcea12f0fbd5a56daedecc9c6dc7ce7420f95bf3aff6cd5f021ef",
+    "reference_rebuild_v73/runtime.py": "a820460d2ae841f57df8d3802c0f9543491176f0c016af82fe4802d0f8529e06",
+    "reference_rebuild_v73/stack.py": "5e49f56cbc38a193629b4c81bcd00f7f802adf705df13a7df0a576a1376c3bc6",
+    "reference_rebuild_v73/train.py": "7b926e707c2fdc69313e4134cb15ba0adbccb610e8fc1291067052ed0920f202"
+  },
+  "base_views": [
+    [
+      "raw",
+      false,
+      0.001
+    ],
+    [
+      "context",
+      false,
+      0.0001
+    ],
+    [
+      "cluster",
+      false,
+      0.0003
+    ],
+    [
+      "raw",
+      true,
+      0.001
+    ],
+    [
+      "cluster",
+      true,
+      0.0001
+    ]
+  ],
+  "base_folds": 5,
+  "regularization_definition_url": "https://scikit-learn.org/1.8/modules/linear_model.html#logistic-regression",
+  "fusion": "Five components in1/6 steps;tree total1/3..2/3;compact-family total>=1/6;pool0/.6/1. Highest validation correct then trap correct then candidate Brier.",
+  "test_accessed": false,
+  "official_sha256": {
+    "common.py": "aecd10f7ff2e9e82ac5673d34d576e122caac51d2caaa7c7a8aa05906da51f6c",
+    "predict.py": "e7a627fbdc9ef8d4ab3189a6fa5ac02d56ae703ccd1a81507aea0bd66e042162",
+    "score_predictions.py": "fe12b809b82117aea722e5dfef7a55a88950a7cf50c49ec2ea007ea847959960"
+  },
+  "manifest_sha256": "8b3721d458e48c87eab3a28f660e663981b10617b6e7321123c6ff30b1fbe825",
+  "limitations": [
+    "Benchmark reproduction is not an independent blind evaluation.",
+    "Validation is adaptive development.",
+    "The fixed-base OOF meta holdout is not full nested pipeline CV."
+  ],
+  "ai_assistance": "OpenAI Codex substantially assisted implementation, experiments and documentation.",
+  "network_configurations": {
+    "compact": {
+      "width": 128,
+      "layers": 2,
+      "activation": "gelu",
+      "final_norm": true,
+      "skip": false,
+      "dropout": 0.2,
+      "epochs": 15,
+      "lr": 0.0001,
+      "decay": 0.001,
+      "balanced": false
+    },
+    "compact_balanced": {
+      "width": 128,
+      "layers": 2,
+      "activation": "gelu",
+      "final_norm": true,
+      "skip": false,
+      "dropout": 0.2,
+      "epochs": 15,
+      "lr": 0.0001,
+      "decay": 0.001,
+      "balanced": true
+    },
+    "rich": {
+      "width": 96,
+      "layers": 1,
+      "activation": "relu",
+      "final_norm": false,
+      "skip": true,
+      "dropout": 0.3,
+      "epochs": 1,
+      "lr": 0.0003,
+      "decay": 0.08,
+      "balanced": true
+    }
+  },
+  "metadata_at_utc": "2026-10-31T10:48:32.526888+00:00"
+}

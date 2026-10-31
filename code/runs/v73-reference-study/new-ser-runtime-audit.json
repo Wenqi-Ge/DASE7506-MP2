@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "at_utc": "2026-10-30T15:14:38.427105+00:00",
+  "test_accessed": false,
+  "numpy": "2.5.3",
+  "validation_component_errors": {
+    "tree_log": 0.0,
+    "compact_balanced": 0.0,
+    "rich": 0.0
+  },
+  "reference_reads_blocked": true,
+  "reordered_questions": 40,
+  "unseen_ids": 40,
+  "candidate_permutations": 40,
+  "single_calls": 8,
+  "empty_bank": true
+}

@@ -1,0 +1,22 @@
+{
+  "training_host": {
+    "cpu": "Intel(R) Core(TM) i9-14900KF",
+    "ram_bytes": 67196497920,
+    "ram_gib": 62.58161544799805,
+    "gpu": "NVIDIA GeForce RTX 4090 D, 24564 MiB, 580.173.02",
+    "os": "Linux-6.14.0-37-generic-x86_64-with-glibc2.39"
+  },
+  "inference_host": {
+    "name": "new-ser",
+    "cpu": "AMD EPYC 9354 32-Core Processor",
+    "ram_bytes": 135048564736,
+    "ram_gib": 125.77377700805664,
+    "os": "Linux-6.8.0-52-generic-x86_64-with-glibc2.35"
+  },
+  "training_devices_used": 1,
+  "inference_device": "CPU",
+  "inference_numerical_threads": 4,
+  "reference_xeon_measured": false,
+  "training_memory_scope": "Recorded peak torch.cuda.max_memory_allocated; not whole-process GPU memory or CPU RSS.",
+  "final_fit_time_scope": "v73 end-to-end fit, validation and prescribed fusion search; excludes earlier studies, environment setup and audit work."
+}

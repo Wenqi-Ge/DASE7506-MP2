@@ -1,0 +1,11 @@
+{
+  "at_remote_utc": "2026-10-30T15:15:52.889760+00:00",
+  "host": "new-ser",
+  "source_and_assets_verified": true,
+  "training_audit_passed": true,
+  "deployment_audit_passed": true,
+  "test_started": false,
+  "clock_note": "Host clocks differ; use this remote receipt and subsequent remote benchmark for ordering.",
+  "run_freeze_sha256": "58f62464c1db152e123f555ffd14d5d096742431545ea36ce1844aeb6210a9e9",
+  "run_selection_sha256": "e2bdb8c2637a9c56af60867a2c8592ee6ebd7aeda2fa80ed56d83e03e9537c85"
+}

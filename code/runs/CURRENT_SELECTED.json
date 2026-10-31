@@ -1,0 +1,26 @@
+{
+  "at_local_utc": "2026-10-30T15:20:03.607100+00:00",
+  "method": "submission_v73.py",
+  "checkpoint": "artifacts/v73/checkpoint",
+  "independently_authored_implementation": true,
+  "official_test_status": "Frozen primary reproduced unchanged on new-ser and local; all467 choices identical.",
+  "official_test_correct": 402,
+  "official_test_n": 467,
+  "official_test_accuracy": 86.0813704496788,
+  "validation_correct": 758,
+  "validation_n": 798,
+  "inference_asset_bytes": 6820520,
+  "new_ser_four_thread_seconds": 8.811145505052991,
+  "target85_achieved": true,
+  "additional_correct_needed": 0,
+  "reference_xeon_verified": false,
+  "reproduced_hosts": [
+    "new-ser",
+    "local"
+  ],
+  "study_summary": "runs/v73-reference-study/summary.json",
+  "local_submission_project": "/home/winky/Documents/code/hku-as-7506/DASE7506-MP2-v73-submission",
+  "new_ser_submission_project": "/home/ubuntu/DASE7506-MP2-v73-submission",
+  "report_pages": 8,
+  "report_relative_to_repository": "../DASE7506-MP2-v73-submission/report/MP2_Report.pdf"
+}

@@ -1,0 +1,50 @@
+{
+  "at_utc": "2026-10-30T16:30:02.347364+00:00",
+  "official_score": {
+    "protocol": "dase7506-mp2-open-hard-verifier-v5",
+    "split": "validation",
+    "correct": 758,
+    "n": 798,
+    "accuracy": 94.9874686716792,
+    "scoring_seconds": 0.049289820017293096
+  },
+  "prediction_wall_seconds": 14.453141537960619,
+  "scoring_wall_seconds": 0.1518949349410832,
+  "total_wall_seconds": 14.605036472901702,
+  "cpu": "AMD EPYC 9354 32-Core Processor",
+  "threads": 4,
+  "device": "cpu",
+  "asset_bytes": 6820520,
+  "reference_xeon_verified": false,
+  "numpy": "2.5.3",
+  "python": "3.12.15 | packaged by Anaconda, Inc. | (main, Oct  1 2026, 20:20:25) [GCC 14.3.0]",
+  "numeric_backend": {
+    "OPENBLAS_CORETYPE": "Haswell",
+    "NPY_DISABLE_CPU_FEATURES": "X86_V4,AVX512_ICL,AVX512_SPR"
+  },
+  "commands": [
+    [
+      "/home/ubuntu/DASE7506-MP2-v73-submission/.venv-inference/bin/python",
+      "/home/ubuntu/DASE7506-MP2-v73-submission/code/predict.py",
+      "--method",
+      "/home/ubuntu/DASE7506-MP2-v73-submission/code/submission_v73.py",
+      "--checkpoint",
+      "/home/ubuntu/DASE7506-MP2-v73-submission/code/artifacts/v73/checkpoint",
+      "--split",
+      "validation",
+      "--output",
+      "/home/ubuntu/DASE7506-MP2-v73-submission/code/runs/submission-new-ser-validation/validation-predictions.json"
+    ],
+    [
+      "/home/ubuntu/DASE7506-MP2-v73-submission/.venv-inference/bin/python",
+      "/home/ubuntu/DASE7506-MP2-v73-submission/code/score_predictions.py",
+      "--split",
+      "validation",
+      "--predictions",
+      "/home/ubuntu/DASE7506-MP2-v73-submission/code/runs/submission-new-ser-validation/validation-predictions.json",
+      "--output",
+      "/home/ubuntu/DASE7506-MP2-v73-submission/code/runs/submission-new-ser-validation/validation-score.json"
+    ]
+  ],
+  "run_freeze_sha256": "58f62464c1db152e123f555ffd14d5d096742431545ea36ce1844aeb6210a9e9"
+}

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="511.2pt" height="165.6pt" viewBox="0 0 511.2 165.6" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-31T19:50:23.270506</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.8.0, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 165.6 
+L 511.2 165.6 
+L 511.2 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 158.472 124.2 
+L 480.528 124.2 
+L 480.528 4.968 
+L 158.472 4.968 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <path d="M 158.472 124.2 
+L 158.472 4.968 
+" clip-path="url(#p349a6c74b8)" style="fill: none; stroke: #e2e5e8; stroke-width: 0.6; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_2"/>
+     <g id="text_1">
+      <text style="font: 9px 'DejaVu Sans'; text-anchor: middle" x="158.472" y="137.038594" transform="rotate(-0 158.472 137.038594)">0</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_3">
+      <path d="M 238.986 124.2 
+L 238.986 4.968 
+" clip-path="url(#p349a6c74b8)" style="fill: none; stroke: #e2e5e8; stroke-width: 0.6; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_4"/>
+     <g id="text_2">
+      <text style="font: 9px 'DejaVu Sans'; text-anchor: middle" x="238.986" y="137.038594" transform="rotate(-0 238.986 137.038594)">4</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_5">
+      <path d="M 319.5 124.2 
+L 319.5 4.968 
+" clip-path="url(#p349a6c74b8)" style="fill: none; stroke: #e2e5e8; stroke-width: 0.6; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_6"/>
+     <g id="text_3">
+      <text style="font: 9px 'DejaVu Sans'; text-anchor: middle" x="319.5" y="137.038594" transform="rotate(-0 319.5 137.038594)">8</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_7">
+      <path d="M 400.014 124.2 
+L 400.014 4.968 
+" clip-path="url(#p349a6c74b8)" style="fill: none; stroke: #e2e5e8; stroke-width: 0.6; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_8"/>
+     <g id="text_4">
+      <text style="font: 9px 'DejaVu Sans'; text-anchor: middle" x="400.014" y="137.038594" transform="rotate(-0 400.014 137.038594)">12</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_9">
+      <path d="M 480.528 124.2 
+L 480.528 4.968 
+" clip-path="url(#p349a6c74b8)" style="fill: none; stroke: #e2e5e8; stroke-width: 0.6; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_10"/>
+     <g id="text_5">
+      <text style="font: 9px 'DejaVu Sans'; text-anchor: middle" x="480.528" y="137.038594" transform="rotate(-0 480.528 137.038594)">16</text>
+     </g>
+    </g>
+    <g id="text_6">
+     <text style="font: 9px 'DejaVu Sans'; text-anchor: middle" x="319.5" y="149.748906" transform="rotate(-0 319.5 149.748906)">Correct validation questions lost relative to 758 / 798</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_11"/>
+     <g id="text_7">
+      <text style="font: 9px 'DejaVu Sans'; text-anchor: end" x="152.472" y="22.460134" transform="rotate(-0 152.472 22.460134)">Remove tree</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_12"/>
+     <g id="text_8">
+      <text style="font: 9px 'DejaVu Sans'; text-anchor: end" x="152.472" y="52.822243" transform="rotate(-0 152.472 52.822243)">Remove balanced compact</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_13"/>
+     <g id="text_9">
+      <text style="font: 9px 'DejaVu Sans'; text-anchor: end" x="152.472" y="83.184351" transform="rotate(-0 152.472 83.184351)">Remove rich attention</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_14"/>
+     <g id="text_10">
+      <text style="font: 9px 'DejaVu Sans'; text-anchor: end" x="152.472" y="113.54646" transform="rotate(-0 152.472 113.54646)">Remove answer pooling</text>
+     </g>
+    </g>
+   </g>
+   <g id="patch_3">
+    <path d="M 158.472 10.387636 
+L 440.271 10.387636 
+L 440.271 27.694038 
+L 158.472 27.694038 
+z
+" clip-path="url(#p349a6c74b8)" style="fill: #597c9d"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 158.472 40.749745 
+L 259.1145 40.749745 
+L 259.1145 58.056147 
+L 158.472 58.056147 
+z
+" clip-path="url(#p349a6c74b8)" style="fill: #648b7c"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 158.472 71.111853 
+L 218.8575 71.111853 
+L 218.8575 88.418255 
+L 158.472 88.418255 
+z
+" clip-path="url(#p349a6c74b8)" style="fill: #a58968"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 158.472 101.473962 
+L 259.1145 101.473962 
+L 259.1145 118.780364 
+L 158.472 118.780364 
+z
+" clip-path="url(#p349a6c74b8)" style="fill: #7e8792"/>
+   </g>
+   <g id="text_11">
+    <text style="font: 9px 'DejaVu Sans'; text-anchor: start" x="445.303125" y="21.524275" transform="rotate(-0 445.303125 21.524275)">−14</text>
+   </g>
+   <g id="text_12">
+    <text style="font: 9px 'DejaVu Sans'; text-anchor: start" x="264.146625" y="51.886383" transform="rotate(-0 264.146625 51.886383)">−5</text>
+   </g>
+   <g id="text_13">
+    <text style="font: 9px 'DejaVu Sans'; text-anchor: start" x="223.889625" y="82.248492" transform="rotate(-0 223.889625 82.248492)">−3</text>
+   </g>
+   <g id="text_14">
+    <text style="font: 9px 'DejaVu Sans'; text-anchor: start" x="264.146625" y="112.6106" transform="rotate(-0 264.146625 112.6106)">−5</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p349a6c74b8">
+   <rect x="158.472" y="4.968" width="322.056" height="119.232"/>
+  </clipPath>
+ </defs>
+</svg>

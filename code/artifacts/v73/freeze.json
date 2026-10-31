@@ -1,0 +1,24 @@
+{
+  "at_utc": "2026-10-31T10:50:18.513494+00:00",
+  "source_sha256": {
+    "submission_v73.py": "21c6a9c3a79fdea39bf404d01209b96b58a7b18d2b5a998a61ba2d49a202aca0",
+    "reference_rebuild_v73/__init__.py": "311ca8367451a982599da2d2d39467080e1c204bbe35c54e98465cf87d1c2bdb",
+    "reference_rebuild_v73/features.py": "454b546c31f27eac1e079fef81012dd0867d38512e864b0727c4984f7d616778",
+    "reference_rebuild_v73/maths.py": "b0fc361028aac554ba6cfcb95dc54f368aff0dfe05ed97e0481c1b908e15c001",
+    "reference_rebuild_v73/net.py": "917114ba6dffcea12f0fbd5a56daedecc9c6dc7ce7420f95bf3aff6cd5f021ef",
+    "reference_rebuild_v73/runtime.py": "a820460d2ae841f57df8d3802c0f9543491176f0c016af82fe4802d0f8529e06",
+    "reference_rebuild_v73/stack.py": "5e49f56cbc38a193629b4c81bcd00f7f802adf705df13a7df0a576a1376c3bc6",
+    "reference_rebuild_v73/train.py": "7b926e707c2fdc69313e4134cb15ba0adbccb610e8fc1291067052ed0920f202"
+  },
+  "asset_sha256": {
+    "compact_balanced.npz": "19cc3ced0c5cb53adb4bb67103f102e23f5e924c0f16a06d511e907ba06504ea",
+    "tree_log.npz": "2c66069b02dc847195a4d2fa081f457ba412ec5cc414e1f6b286af7e32b0e4e4",
+    "config.json": "556be11de903d014d7e8c5a66f9ecdbb4ecce9992b219cd685043ced38566f53",
+    "rich.npz": "a400277a264f0ee59b3d1a72c4c37f5b94086c29026ce4571f3b21a69196eb0e",
+    "stack.npz": "c6b57e5a9a8a0a1c1b03afbbd988871257cf76da30186acabcd4de52e3e57216"
+  },
+  "inference_asset_bytes": 6820520,
+  "experiments_sha256": "3e9ffad917db0d1027888cd80c6be1b167693f0d63be634969e8dfa2251e1883",
+  "model_selection_at_utc": "2026-10-30T15:13:42.277738+00:00",
+  "model_selection_frozen_before_test": true
+}

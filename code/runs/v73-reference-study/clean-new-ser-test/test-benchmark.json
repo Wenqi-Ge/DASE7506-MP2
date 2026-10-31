@@ -1,0 +1,26 @@
+{
+  "at_utc": "2026-10-30T15:21:53.703448+00:00",
+  "official_score": {
+    "protocol": "dase7506-mp2-open-hard-verifier-v5",
+    "split": "test",
+    "correct": 402,
+    "n": 467,
+    "accuracy": 86.0813704496788,
+    "scoring_seconds": 0.03020070504862815
+  },
+  "prediction_wall_seconds": 8.763357202988118,
+  "scoring_wall_seconds": 0.12977281503845006,
+  "total_wall_seconds": 8.893130018026568,
+  "cpu": "AMD EPYC 9354 32-Core Processor",
+  "threads": 4,
+  "device": "cpu",
+  "asset_bytes": 6820520,
+  "reference_xeon_verified": false,
+  "numpy": "2.5.3",
+  "python": "3.12.15 | packaged by Anaconda, Inc. | (main, Oct  1 2026, 20:20:25) [GCC 14.3.0]",
+  "numeric_backend": {
+    "OPENBLAS_CORETYPE": "Haswell",
+    "NPY_DISABLE_CPU_FEATURES": "X86_V4,AVX512_ICL,AVX512_SPR"
+  },
+  "run_freeze_sha256": "58f62464c1db152e123f555ffd14d5d096742431545ea36ce1844aeb6210a9e9"
+}

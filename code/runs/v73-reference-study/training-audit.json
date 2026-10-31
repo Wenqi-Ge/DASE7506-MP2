@@ -1,0 +1,157 @@
+{
+  "passed": true,
+  "at_utc": "2026-10-30T15:17:35.425854+00:00",
+  "test_accessed": false,
+  "feature_replay_error": 0.0,
+  "base_folds": [
+    {
+      "fold": 0,
+      "fit_questions": 3804,
+      "held_questions": 951,
+      "normalization_error": 0.0,
+      "oof_prediction_error": 2.980018165565923e-08,
+      "augmentation_leakage": false
+    },
+    {
+      "fold": 1,
+      "fit_questions": 3804,
+      "held_questions": 951,
+      "normalization_error": 0.0,
+      "oof_prediction_error": 2.979988766860231e-08,
+      "augmentation_leakage": false
+    },
+    {
+      "fold": 2,
+      "fit_questions": 3804,
+      "held_questions": 951,
+      "normalization_error": 0.0,
+      "oof_prediction_error": 2.980219693249353e-08,
+      "augmentation_leakage": false
+    },
+    {
+      "fold": 3,
+      "fit_questions": 3804,
+      "held_questions": 951,
+      "normalization_error": 0.0,
+      "oof_prediction_error": 2.9789498867671682e-08,
+      "augmentation_leakage": false
+    },
+    {
+      "fold": 4,
+      "fit_questions": 3804,
+      "held_questions": 951,
+      "normalization_error": 0.0,
+      "oof_prediction_error": 2.9801877632351648e-08,
+      "augmentation_leakage": false
+    }
+  ],
+  "full_base_normalization_error": 0.0,
+  "neural": [
+    {
+      "family": "compact",
+      "member": 0,
+      "fit_questions": 3804,
+      "fit_candidate_rows": 15216,
+      "normalization_error": 0.0
+    },
+    {
+      "family": "compact",
+      "member": 1,
+      "fit_questions": 3804,
+      "fit_candidate_rows": 15216,
+      "normalization_error": 0.0
+    },
+    {
+      "family": "compact",
+      "member": 2,
+      "fit_questions": 3804,
+      "fit_candidate_rows": 15216,
+      "normalization_error": 0.0
+    },
+    {
+      "family": "compact",
+      "member": 3,
+      "fit_questions": 3804,
+      "fit_candidate_rows": 15216,
+      "normalization_error": 0.0
+    },
+    {
+      "family": "compact",
+      "member": 4,
+      "fit_questions": 3804,
+      "fit_candidate_rows": 15216,
+      "normalization_error": 0.0
+    },
+    {
+      "family": "compact_balanced",
+      "member": 0,
+      "fit_questions": 3804,
+      "fit_candidate_rows": 28696,
+      "normalization_error": 0.0
+    },
+    {
+      "family": "compact_balanced",
+      "member": 1,
+      "fit_questions": 3804,
+      "fit_candidate_rows": 28864,
+      "normalization_error": 0.0
+    },
+    {
+      "family": "compact_balanced",
+      "member": 2,
+      "fit_questions": 3804,
+      "fit_candidate_rows": 28712,
+      "normalization_error": 0.0
+    },
+    {
+      "family": "compact_balanced",
+      "member": 3,
+      "fit_questions": 3804,
+      "fit_candidate_rows": 28728,
+      "normalization_error": 0.0
+    },
+    {
+      "family": "compact_balanced",
+      "member": 4,
+      "fit_questions": 3804,
+      "fit_candidate_rows": 28728,
+      "normalization_error": 0.0
+    },
+    {
+      "family": "rich",
+      "member": 0,
+      "fit_questions": 4755,
+      "fit_candidate_rows": 35932,
+      "normalization_error": 0.0
+    },
+    {
+      "family": "rich",
+      "member": 1,
+      "fit_questions": 4755,
+      "fit_candidate_rows": 35932,
+      "normalization_error": 0.0
+    },
+    {
+      "family": "rich",
+      "member": 2,
+      "fit_questions": 4755,
+      "fit_candidate_rows": 35932,
+      "normalization_error": 0.0
+    }
+  ],
+  "lexical_idf_error": 0.0,
+  "lexical_validation_error": 2.9802292633718253e-08,
+  "pca_train_mean_error": 0.0,
+  "validation_components": {
+    "tree_pair": 0.0,
+    "tree_log": 0.0,
+    "compact": 0.0,
+    "compact_balanced": 0.0,
+    "rich": 0.0
+  },
+  "validation_correct": 758,
+  "limitations": [
+    "Does not refit the optimizers or claim full nested pipeline cross-validation.",
+    "Validation is an adaptively used development set."
+  ]
+}

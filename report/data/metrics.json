@@ -1,0 +1,256 @@
+{
+  "at_utc": "2026-10-31T10:50:18.983493+00:00",
+  "test_inputs_or_references_read": false,
+  "diagnostics_written_after_final_test": true,
+  "final_method_changed": false,
+  "plan": "Fixed component deletions and no answer pooling. Validation diagnostics only; no new selection.",
+  "freeze_sha256": "74bf6bd0bdb0f0ea45f64ea967894f491430c1e9daf9dc8717a016e2dc323b8a",
+  "train": {
+    "questions": 4755,
+    "candidates": 19020,
+    "informative_questions": 2114,
+    "agreement_questions": 2641,
+    "wrong_majority_single_correct_questions": 367,
+    "invalid_candidates": 871,
+    "correct_candidate_count_histogram": {
+      "1": 711,
+      "2": 732,
+      "3": 1070,
+      "4": 2242
+    }
+  },
+  "validation": {
+    "questions": 798,
+    "candidates": 3192,
+    "informative_questions": 355,
+    "agreement_questions": 443,
+    "wrong_majority_single_correct_questions": 60,
+    "invalid_candidates": 157,
+    "correct_candidate_count_histogram": {
+      "1": 117,
+      "2": 123,
+      "3": 179,
+      "4": 379
+    }
+  },
+  "baseline": [
+    {
+      "name": "Majority answer",
+      "kind": "baseline",
+      "description": "Most frequent canonical valid answer; first candidate breaks ties.",
+      "correct": 688,
+      "n": 798,
+      "accuracy": 86.21553884711778,
+      "informative_correct": 245,
+      "informative_n": 355,
+      "informative_accuracy": 69.01408450704226,
+      "trap_correct": 0,
+      "trap_n": 60,
+      "delta_correct_vs_full": -70,
+      "full_fixes": 82,
+      "full_regressions": 12
+    },
+    {
+      "name": "First candidate",
+      "kind": "baseline",
+      "description": "Select candidate zero without learned evidence.",
+      "correct": 624,
+      "n": 798,
+      "accuracy": 78.19548872180451,
+      "informative_correct": 195,
+      "informative_n": 355,
+      "informative_accuracy": 54.929577464788736,
+      "trap_correct": 19,
+      "trap_n": 60,
+      "delta_correct_vs_full": -134,
+      "full_fixes": 148,
+      "full_regressions": 14
+    }
+  ],
+  "components": [
+    {
+      "name": "tree_log",
+      "kind": "component",
+      "description": "Frozen standalone component with same-answer mean pooling.",
+      "correct": 751,
+      "n": 798,
+      "accuracy": 94.11027568922306,
+      "informative_correct": 308,
+      "informative_n": 355,
+      "informative_accuracy": 86.76056338028168,
+      "trap_correct": 33,
+      "trap_n": 60,
+      "delta_correct_vs_full": -7,
+      "full_fixes": 9,
+      "full_regressions": 2
+    },
+    {
+      "name": "compact_balanced",
+      "kind": "component",
+      "description": "Frozen standalone component with same-answer mean pooling.",
+      "correct": 739,
+      "n": 798,
+      "accuracy": 92.60651629072682,
+      "informative_correct": 296,
+      "informative_n": 355,
+      "informative_accuracy": 83.38028169014085,
+      "trap_correct": 44,
+      "trap_n": 60,
+      "delta_correct_vs_full": -19,
+      "full_fixes": 26,
+      "full_regressions": 7
+    },
+    {
+      "name": "rich",
+      "kind": "component",
+      "description": "Frozen standalone component with same-answer mean pooling.",
+      "correct": 740,
+      "n": 798,
+      "accuracy": 92.73182957393483,
+      "informative_correct": 297,
+      "informative_n": 355,
+      "informative_accuracy": 83.66197183098592,
+      "trap_correct": 47,
+      "trap_n": 60,
+      "delta_correct_vs_full": -18,
+      "full_fixes": 27,
+      "full_regressions": 9
+    }
+  ],
+  "full": {
+    "name": "Full frozen ensemble",
+    "kind": "primary",
+    "description": "Frozen tree 1/2, balanced compact attention 1/3, rich attention 1/6; pooling 1.",
+    "correct": 758,
+    "n": 798,
+    "accuracy": 94.9874686716792,
+    "informative_correct": 315,
+    "informative_n": 355,
+    "informative_accuracy": 88.73239436619718,
+    "trap_correct": 41,
+    "trap_n": 60,
+    "delta_correct_vs_full": 0,
+    "full_fixes": 0,
+    "full_regressions": 0
+  },
+  "ablations": [
+    {
+      "name": "Without tree_log",
+      "kind": "fixed_weight_deletion",
+      "description": "Delete one component; renormalize remaining frozen weights; no reoptimization.",
+      "correct": 744,
+      "n": 798,
+      "accuracy": 93.23308270676691,
+      "informative_correct": 301,
+      "informative_n": 355,
+      "informative_accuracy": 84.78873239436619,
+      "trap_correct": 46,
+      "trap_n": 60,
+      "delta_correct_vs_full": -14,
+      "full_fixes": 19,
+      "full_regressions": 5
+    },
+    {
+      "name": "Without compact_balanced",
+      "kind": "fixed_weight_deletion",
+      "description": "Delete one component; renormalize remaining frozen weights; no reoptimization.",
+      "correct": 753,
+      "n": 798,
+      "accuracy": 94.3609022556391,
+      "informative_correct": 310,
+      "informative_n": 355,
+      "informative_accuracy": 87.32394366197182,
+      "trap_correct": 35,
+      "trap_n": 60,
+      "delta_correct_vs_full": -5,
+      "full_fixes": 7,
+      "full_regressions": 2
+    },
+    {
+      "name": "Without rich",
+      "kind": "fixed_weight_deletion",
+      "description": "Delete one component; renormalize remaining frozen weights; no reoptimization.",
+      "correct": 755,
+      "n": 798,
+      "accuracy": 94.61152882205513,
+      "informative_correct": 312,
+      "informative_n": 355,
+      "informative_accuracy": 87.88732394366198,
+      "trap_correct": 38,
+      "trap_n": 60,
+      "delta_correct_vs_full": -3,
+      "full_fixes": 3,
+      "full_regressions": 0
+    },
+    {
+      "name": "Without answer pooling",
+      "kind": "decision_ablation",
+      "description": "Keep all component probabilities and weights; select maximum candidate probability.",
+      "correct": 753,
+      "n": 798,
+      "accuracy": 94.3609022556391,
+      "informative_correct": 310,
+      "informative_n": 355,
+      "informative_accuracy": 87.32394366197182,
+      "trap_correct": 34,
+      "trap_n": 60,
+      "delta_correct_vs_full": -5,
+      "full_fixes": 7,
+      "full_regressions": 2
+    }
+  ],
+  "distinct_answer_strata": [
+    {
+      "distinct_answers": 1,
+      "n": 443,
+      "full_correct": 443,
+      "majority_correct": 443
+    },
+    {
+      "distinct_answers": 2,
+      "n": 227,
+      "full_correct": 212,
+      "majority_correct": 175
+    },
+    {
+      "distinct_answers": 3,
+      "n": 108,
+      "full_correct": 88,
+      "majority_correct": 65
+    },
+    {
+      "distinct_answers": 4,
+      "n": 20,
+      "full_correct": 15,
+      "majority_correct": 5
+    }
+  ],
+  "informative_answer_margin_bins": [
+    {
+      "lower": 0.0,
+      "upper": 0.1,
+      "n": 23,
+      "correct": 15,
+      "accuracy": 65.21739130434783
+    },
+    {
+      "lower": 0.1,
+      "upper": 0.25,
+      "n": 31,
+      "correct": 20,
+      "accuracy": 64.51612903225806
+    },
+    {
+      "lower": 0.25,
+      "upper": 1.01,
+      "n": 301,
+      "correct": 280,
+      "accuracy": 93.02325581395348
+    }
+  ],
+  "limitations": [
+    "Validation was adaptively used during development.",
+    "These fixed-weight component and pooling diagnostics were added after final scoring and did not change the submitted model.",
+    "No component-level TEST scores or TEST error examples are computed."
+  ]
+}
